@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOKO BIKINIS — Catálogo Oficial</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- JSZip para cargar el archivo ZIP local directamente en el navegador si se desea -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <!-- Google Fonts: Fredoka (groovy redondeada), Pacifico (script retro) e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            koko: {
+              pink: '#E62E6B',
+              pinkDark: '#C21D54',
+              pastel: '#FADADD',
+              pastelLight: '#FDECEF',
+              cream: '#FFF8F5',
+              olive: '#6B8E23',
+              coco: '#7B4B3A',
+            },
+          },
+          fontFamily: {
+            groovy: ['"Fredoka"', 'sans-serif'],
+            script: ['"Pacifico"', 'cursive'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          boxShadow: {
+            sticker: '0 6px 18px rgba(230, 46, 107, 0.14), 0 2px 6px rgba(0, 0, 0, 0.05)',
+            card: '0 10px 28px rgba(230, 46, 107, 0.10)',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FFF8F5;
+      color: #3D1F2B;
+      background-image:
+        radial-gradient(circle at 12% 8%, rgba(250, 218, 221, 0.55) 0%, transparent 28%),
+        radial-gradient(circle at 88% 18%, rgba(250, 218, 221, 0.45) 0%, transparent 32%),
+        radial-gradient(circle at 50% 85%, rgba(250, 218, 221, 0.4) 0%, transparent 35%);
+    }
+
+    /* Estilo sticker blanco con borde recortado */
+    .sticker-badge {
+      background: #FFFFFF;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 6px 16px rgba(230, 46, 107, 0.18), 0 1px 3px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .sticker-badge:hover {
+      transform: scale(1.06) rotate(-2deg);
+    }
+
+    /* Animación flotante suave */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(3deg); }
+    }
+    .animate-float {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+    .animate-float-delay {
+      animation: floatSlow 5.2s ease-in-out 1.4s infinite;
+    }
+
+    /* Scrollbar estilizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFF8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #F3A6BE;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E62E6B;
+    }
+
+    /* Ocultar barra en carruseles horizontales manteniendo scroll */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-koko-pink selection:text-white">
+
+  <!-- Toast de notificación -->
+  <div id="toast-container" class="fixed top-4 right-4 z-[100] flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- HERO & HEADER TROPICAL RETRO -->
+  <header class="relative overflow-hidden bg-gradient-to-b from-koko-pastel via-koko-pastelLight to-koko-cream pt-6 pb-8 px-4 sm:px-6 border-b-2 border-koko-pastel">
+    <!-- Stickers decorativos flotantes (Escritorio y Tablet) -->
+    <div class="max-w-7xl mx-auto relative">
+      <!-- Sticker Bola Disco Rosa (Arriba Izquierda) -->
+      <div class="hidden md:flex sticker-badge rounded-full p-2.5 absolute -top-2 left-4 animate-float items-center justify-center" title="Disco Summer Vibes">
+        <svg class="w-12 h-12" viewBox="0 0 64 64" fill="none">
+          <line x1="32" y1="2" x2="32" y2="10" stroke="#E62E6B" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="32" cy="36" r="24" fill="#F9A8C4" stroke="#E62E6B" stroke-width="2.5"/>
+          <ellipse cx="32" cy="36" rx="16" ry="24" stroke="#E62E6B" stroke-width="1.8"/>
+          <ellipse cx="32" cy="36" rx="8" ry="24" stroke="#E62E6B" stroke-width="1.8"/>
+          <line x1="8" y1="36" x2="56" y2="36" stroke="#E62E6B" stroke-width="1.8"/>
+          <path d="M12 24C20 27 44 27 52 24" stroke="#E62E6B" stroke-width="1.8"/>
+          <path d="M12 48C20 45 44 45 52 48" stroke="#E62E6B" stroke-width="1.8"/>
+          <rect x="24" y="26" width="7" height="9" rx="1" fill="#E62E6B"/>
+          <rect x="33" y="37" width="7" height="9" rx="1" fill="#FFFFFF"/>
+          <rect x="17" y="37" width="6" height="8" rx="1" fill="#E62E6B" opacity="0.7"/>
+        </svg>
+      </div>
+
+      <!-- Sticker Cerezas (Abajo Izquierda) -->
+      <div class="hidden lg:flex sticker-badge rounded-3xl px-3 py-2 absolute bottom-0 left-12 animate-float-delay items-center gap-2 -rotate-6">
+        <svg class="w-11 h-11" viewBox="0 0 64 64" fill="none">
+          <path d="M22 44C23 28 32 16 42 12C38 22 39 33 43 43" stroke="#6B8E23" stroke-width="3" stroke-linecap="round"/>
+          <path d="M42 12C48 11 54 14 55 19C49 20 44 17 42 12Z" fill="#6B8E23"/>
+          <circle cx="20" cy="46" r="10" fill="#E62E6B" stroke="#B81D52" stroke-width="2"/>
+          <circle cx="43" cy="45" r="10" fill="#E62E6B" stroke="#B81D52" stroke-width="2"/>
+          <path d="M16 42C17 40 19 39 21 39" stroke="#FADADD" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M39 41C40 39 42 38 44 38" stroke="#FADADD" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="font-script text-koko-pink text-base pr-1">Disfrutá el verano ♡</span>
+      </div>
+
+      <!-- Sticker Anteojos Corazón (Arriba Derecha) -->
+      <div class="hidden md:flex sticker-badge rounded-3xl p-2.5 absolute -top-1 right-6 animate-float-delay items-center justify-center rotate-6">
+        <svg class="w-14 h-10" viewBox="0 0 80 50" fill="none">
+          <path d="M22 16C18 10 8 11 8 20C8 29 22 38 22 38C22 38 36 29 36 20C36 11 26 10 22 16Z" fill="#9E1946" stroke="#E62E6B" stroke-width="3.5"/>
+          <path d="M58 16C54 10 44 11 44 20C44 29 58 38 58 38C58 38 72 29 72 20C72 11 62 10 58 16Z" fill="#9E1946" stroke="#E62E6B" stroke-width="3.5"/>
+          <path d="M35 18C38 16 42 16 45 18" stroke="#E62E6B" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M14 18L19 23" stroke="#FADADD" stroke-width="2" stroke-linecap="round"/>
+          <path d="M50 18L55 23" stroke="#FADADD" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Sticker Frase Sol, playa y KOKO (Abajo Derecha) -->
+      <div class="hidden lg:flex sticker-badge rounded-3xl px-4 py-2 bg-koko-pastelLight absolute bottom-1 right-10 animate-float items-center gap-2 rotate-3">
+        <span class="font-script text-koko-pink text-lg">Sol, playa y KOKO ♡</span>
+      </div>
+
+      <!-- LOGO CENTRAL KOKO BIKINIS -->
+      <div class="flex flex-col items-center text-center relative z-10">
+        <!-- Flor de Hibisco SVG encima del logo -->
+        <div class="relative mb-1">
+          <svg class="w-16 h-16 sm:w-20 sm:h-20 text-koko-pink drop-shadow-sm" viewBox="0 0 120 120" fill="none">
+            <path d="M60 58C45 45 35 20 55 12C70 6 78 24 65 55Z" fill="#E62E6B"/>
+            <path d="M63 59C78 44 103 38 108 58C112 73 94 79 65 64Z" fill="#E62E6B"/>
+            <path d="M62 63C80 74 90 98 73 108C59 116 49 100 58 66Z" fill="#E62E6B"/>
+            <path d="M57 63C44 80 20 92 12 74C5 60 22 49 55 59Z" fill="#E62E6B"/>
+            <path d="M56 58C36 53 16 33 29 18C40 6 56 19 59 55Z" fill="#E62E6B"/>
+            <circle cx="60" cy="60" r="10" fill="#FADADD"/>
+            <path d="M60 60C68 46 80 34 92 26" stroke="#E62E6B" stroke-width="4.5" stroke-linecap="round"/>
+            <circle cx="94" cy="24" r="4" fill="#E62E6B"/>
+            <circle cx="88" cy="21" r="3" fill="#E62E6B"/>
+            <circle cx="96" cy="30" r="3" fill="#E62E6B"/>
+          </svg>
+          <svg class="w-5 h-5 text-koko-pink absolute -left-6 top-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"/>
+          </svg>
+          <svg class="w-4 h-4 text-koko-pink absolute -right-5 bottom-2" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0L14.8 9.2L24 12L14.8 14.8L12 24L9.2 14.8L0 12L9.2 9.2L12 0Z"/>
+          </svg>
+        </div>
+
+        <!-- Tipografía Groovy KOKO -->
+        <h1 class="font-groovy font-bold text-6xl sm:text-7xl md:text-8xl tracking-tight text-koko-pink leading-none select-none drop-shadow-[0_3px_0_rgba(255,255,255,0.9)]">
+          KOKO
+        </h1>
+
+        <!-- Ondas dobles debajo de KOKO -->
+        <svg class="w-44 sm:w-56 h-5 text-koko-pink my-1" viewBox="0 0 220 22" fill="none">
+          <path d="M6 8C35 16 65 2 110 8C155 14 185 2 214 8" stroke="#E62E6B" stroke-width="4.2" stroke-linecap="round"/>
+          <path d="M18 16C45 22 75 10 110 16C145 22 175 10 202 16" stroke="#E62E6B" stroke-width="3.6" stroke-linecap="round"/>
+        </svg>
+
+        <p class="font-groovy font-bold tracking-[0.38em] text-sm sm:text-base text-koko-pink uppercase pl-1.5">
+          BIKINIS
+        </p>
+
+        <!-- Subtítulo con slogans y cargador local de ZIP/Carpeta -->
+        <div class="mt-3 flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
+          <span class="bg-white/90 text-koko-pink font-script px-3.5 py-1 rounded-full shadow-sm border border-koko-pastel">
+            Sol, playa y KOKO ♡
+          </span>
+          <span class="bg-koko-pink text-white font-medium px-3.5 py-1 rounded-full shadow-sm">
+            71 Modelos • T1 a T6
+          </span>
+        </div>
+
+        <!-- Helper opcional para cargar fotos desde ZIP o Carpeta local al instante en el navegador -->
+        <div class="mt-3.5 inline-flex flex-wrap items-center justify-center gap-2 bg-white/90 backdrop-blur-xs border border-koko-pastel rounded-2xl px-3.5 py-2 shadow-2xs text-xs">
+          <span id="media-source-status" class="text-gray-600 font-medium">
+            Fotos en ruta <code class="text-koko-pink font-semibold">CATALOGO/...</code>
+          </span>
+          <label class="cursor-pointer inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-koko-pastelLight hover:bg-koko-pastel text-koko-pink font-bold transition">
+            <span>Cargar ZIP de fotos</span>
+            <input id="zip-file-input" type="file" accept=".zip,application/zip" class="hidden" />
+          </label>
+          <label class="cursor-pointer inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-koko-cream hover:bg-koko-pastelLight text-koko-coco font-bold border border-koko-pastel transition">
+            <span>Cargar carpeta</span>
+            <input id="folder-file-input" type="file" webkitdirectory directory multiple class="hidden" />
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BARRA DE BÚSQUEDA Y FILTROS INTELIGENTES (Sticky en scroll) -->
+  <section class="sticky top-0 z-30 bg-koko-cream/95 backdrop-blur-md border-b border-koko-pastel shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 space-y-3">
+      <!-- Fila 1: Buscador + Estado de Stock -->
+      <div class="flex flex-col md:flex-row gap-2.5 items-stretch md:items-center justify-between">
+        <div class="relative flex-1">
+          <span class="absolute inset-y-0 left-3.5 flex items-center text-koko-pink">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="M20 20l-3.5-3.5" stroke-linecap="round"></path>
+            </svg>
+          </span>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Buscar modelo (ej. Amalfy, Bomb, Zafira) o color (ej. Chocolate, Animal print, Fucsia)..."
+            class="w-full pl-11 pr-10 py-2.5 rounded-2xl bg-white border-2 border-koko-pastel focus:border-koko-pink focus:outline-none text-sm text-gray-800 placeholder-gray-400 shadow-inner transition"
+          />
+          <button
+            id="clear-search-btn"
+            type="button"
+            class="hidden absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-koko-pink"
+            title="Limpiar búsqueda"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Filtros rápidos de disponibilidad -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+          <button data-stock="all" class="stock-filter-btn active px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition bg-koko-pink text-white shadow-sm">
+            Todos (<span id="count-all">0</span>)
+          </button>
+          <button data-stock="available" class="stock-filter-btn px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition bg-white text-koko-pink border border-koko-pastel hover:bg-koko-pastelLight">
+            Disponibles (<span id="count-available">0</span>)
+          </button>
+          <button data-stock="out" class="stock-filter-btn px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition bg-white text-gray-600 border border-koko-pastel hover:bg-koko-pastelLight">
+            Sin Stock (<span id="count-out">0</span>)
+          </button>
+        </div>
+      </div>
+
+      <!-- Fila 2: Filtro por Talles y Categorías / Características -->
+      <div class="flex flex-col lg:flex-row gap-2.5 lg:items-center justify-between pt-0.5">
+        <!-- Talles -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+          <span class="text-xs font-bold uppercase tracking-wider text-koko-pink mr-1 shrink-0">Talle:</span>
+          <button data-size="ALL" class="size-filter-btn active px-3 py-1.5 rounded-xl text-xs font-bold bg-koko-pink text-white transition shrink-0">Todos</button>
+          <button data-size="T1" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T1</button>
+          <button data-size="T2" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T2</button>
+          <button data-size="T3" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T3</button>
+          <button data-size="T4" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T4</button>
+          <button data-size="T5" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T5</button>
+          <button data-size="T6" class="size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0">T6</button>
+        </div>
+
+        <!-- Categorías / Características -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+          <span class="text-xs font-bold uppercase tracking-wider text-koko-olive mr-1 shrink-0">Estilo:</span>
+          <button data-cat="ALL" class="cat-filter-btn active px-3 py-1.5 rounded-xl text-xs font-semibold bg-koko-olive text-white transition shrink-0">Todos</button>
+          <button data-cat="SIN_TAZAS" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0">Sin tazas</button>
+          <button data-cat="VEDETINA_LESS" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0">Vedetina / Less</button>
+          <button data-cat="TRICOT_LYCRA" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0">Tricot / Lycra / Morley</button>
+          <button data-cat="ANIMAL_PRINT" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0">Animal Print</button>
+          <button data-cat="ESTAMPADOS" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0">Estampados / Cuadrillé / Lunares</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTADOR DE RESULTADOS Y GRILLA -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-28">
+    <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+      <p id="results-summary" class="text-sm font-medium text-gray-600">
+        Mostrando <span class="font-bold text-koko-pink">71</span> modelos de la colección
+      </p>
+      <button
+        id="reset-filters-btn"
+        type="button"
+        class="hidden text-xs font-semibold text-koko-pink hover:underline flex items-center gap-1"
+      >
+        <span>Restablecer todos los filtros</span>
+      </button>
+    </div>
+
+    <!-- GRILLA DE TARJETAS DE BIKINIS -->
+    <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+
+    <!-- ESTADO VACÍO SI NO HAY COINCIDENCIAS -->
+    <div id="empty-state" class="hidden text-center py-16 px-4 bg-white rounded-3xl border-2 border-dashed border-koko-pastel max-w-lg mx-auto my-8">
+      <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-koko-pastelLight flex items-center justify-center text-koko-pink">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="M21 21l-4.35-4.35" stroke-linecap="round"></path>
+        </svg>
+      </div>
+      <h3 class="font-groovy text-xl font-bold text-koko-pink mb-1">¡Ups! No encontramos ese modelo</h3>
+      <p class="text-sm text-gray-500 mb-4">Probá buscando con otro nombre, color o limpiando los filtros activos.</p>
+      <button id="empty-reset-btn" class="px-5 py-2.5 rounded-2xl bg-koko-pink text-white text-sm font-semibold shadow-sm hover:bg-koko-pinkDark transition">
+        Ver todo el catálogo
+      </button>
+    </div>
+  </main>
+
+  <!-- FOOTER TROPICAL -->
+  <footer class="bg-koko-pastelLight border-t-2 border-koko-pastel py-8 px-4 text-center">
+    <div class="max-w-3xl mx-auto flex flex-col items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="font-groovy font-bold text-2xl text-koko-pink">KOKO BIKINIS</span>
+        <span class="text-koko-pink">✿</span>
+      </div>
+      <p class="font-script text-koko-pink text-lg">Disfrutá el verano • Sol, playa y KOKO ♡</p>
+      <p class="text-xs text-gray-500 max-w-md">
+        Seleccioná tus modelos favoritos con talle y color, armá tu lista y enviala directo por WhatsApp para confirmar disponibilidad inmediata.
+      </p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE MI SELECCIÓN / LISTA DE CONSULTA -->
+  <button
+    id="floating-cart-btn"
+    type="button"
+    class="fixed bottom-5 right-5 z-40 flex items-center gap-3 bg-koko-pink hover:bg-koko-pinkDark text-white px-5 py-3.5 rounded-full shadow-xl transition-transform active:scale-95 border-2 border-white"
+  >
+    <div class="relative">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path d="M6 7h12l1 13H5L6 7z" stroke-linejoin="round"/>
+        <path d="M9 7V5a3 3 0 016 0v2" stroke-linecap="round"/>
+      </svg>
+      <span id="cart-badge" class="absolute -top-2 -right-2.5 bg-white text-koko-pink font-groovy font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center shadow">
+        0
+      </span>
+    </div>
+    <span class="font-groovy font-semibold text-sm sm:text-base">Mi Selección</span>
+  </button>
+
+  <!-- DRAWER / MODAL LATERAL DE LISTA DE CONSULTA WHATSAPP -->
+  <div id="cart-drawer-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 hidden transition-opacity"></div>
+  <aside
+    id="cart-drawer"
+    class="fixed top-0 right-0 h-full w-full max-w-md bg-koko-cream z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col border-l-2 border-koko-pastel"
+  >
+    <div class="bg-koko-pastelLight px-5 py-4 border-b border-koko-pastel flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-koko-pink text-xl">✿</span>
+        <div>
+          <h2 class="font-groovy font-bold text-xl text-koko-pink leading-tight">Mi Selección KOKO</h2>
+          <p class="text-xs text-gray-600">Armá tu pedido y consultá por WhatsApp</p>
+        </div>
+      </div>
+      <button id="close-cart-btn" class="p-2 rounded-full bg-white text-gray-500 hover:text-koko-pink shadow-xs">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="px-5 py-3 bg-white border-b border-koko-pastel">
+      <label for="wa-phone-input" class="block text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-1">
+        WhatsApp de KOKO BIKINIS (opcional, con código de país):
+      </label>
+      <input
+        id="wa-phone-input"
+        type="tel"
+        placeholder="Ej: 5492610000000 (vacío abre selector de chat)"
+        class="w-full px-3 py-1.5 text-xs rounded-xl border border-koko-pastel focus:border-koko-pink focus:outline-none bg-koko-cream/50"
+      />
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-3"></div>
+
+    <div class="p-4 bg-white border-t border-koko-pastel space-y-2.5">
+      <div class="flex items-center justify-between text-xs text-gray-500 px-1">
+        <span>Total de bikinis en tu lista:</span>
+        <span id="cart-total-count" class="font-groovy font-bold text-base text-koko-pink">0</span>
+      </div>
+
+      <button
+        id="send-whatsapp-btn"
+        type="button"
+        class="w-full py-3 px-4 rounded-2xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-groovy font-bold text-base shadow-md flex items-center justify-center gap-2 transition active:scale-[0.99]"
+      >
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+        </svg>
+        <span>Consultar por WhatsApp</span>
+      </button>
+
+      <div class="flex gap-2">
+        <button
+          id="copy-list-btn"
+          type="button"
+          class="flex-1 py-2.5 px-3 rounded-2xl bg-koko-pastelLight hover:bg-koko-pastel text-koko-pink font-semibold text-xs flex items-center justify-center gap-1.5 transition"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+          </svg>
+          <span>Copiar mensaje</span>
+        </button>
+        <button
+          id="clear-cart-btn"
+          type="button"
+          class="py-2.5 px-3 rounded-2xl bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold text-xs transition"
+        >
+          Vaciar
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- LIGHTBOX / VISOR DE FOTOS EN GRANDE -->
+  <div id="lightbox-modal" class="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4">
+    <div class="w-full max-w-3xl flex items-center justify-between text-white mb-3">
+      <div>
+        <h3 id="lightbox-title" class="font-groovy font-bold text-2xl text-koko-pastel">MODELO</h3>
+        <p id="lightbox-counter" class="text-xs text-gray-300">Foto 1 de 1</p>
+      </div>
+      <button id="close-lightbox-btn" class="p-2.5 rounded-full bg-white/15 hover:bg-koko-pink text-white transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="relative w-full max-w-3xl flex items-center justify-center bg-white/5 rounded-3xl overflow-hidden border border-white/15 aspect-[3/4] max-h-[72vh]">
+      <img id="lightbox-img" src="" alt="Vista previa" class="w-full h-full object-contain" />
+
+      <button id="lightbox-prev" class="absolute left-3 p-3 rounded-full bg-white/90 text-koko-pink hover:bg-koko-pink hover:text-white shadow-lg transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button id="lightbox-next" class="absolute right-3 p-3 rounded-full bg-white/90 text-koko-pink hover:bg-koko-pink hover:text-white shadow-lg transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="lightbox-thumbs" class="flex items-center gap-2 mt-3 overflow-x-auto max-w-3xl py-1 px-2"></div>
+  </div>
+
+  <script>
+    /**
+     * =========================================================================
+     * 1. BASE DE DATOS COMPLETA DE KOKO BIKINIS (71 MODELOS + RUTAS DEL ZIP)
+     * =========================================================================
+     */
+    const CATALOG_DATA = [
+      {
+        id: 'almendra',
+        name: 'ALMENDRA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/ALMENDRA/1c7006759436cd915d218e0209918e1b.jpg',
+          'CATALOGO/ALMENDRA/5b11e01e1cc2a0be6cefef3d3298f847.jpg',
+          'CATALOGO/ALMENDRA/f29fcce8282c9834321a413917603b71.jpg',
+          'CATALOGO/ALMENDRA/f548c9eaa2d3b50002e07b806216d3a8.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Consultar colores disponibles'],
+              T2: ['Consultar colores disponibles'],
+              T3: ['Consultar colores disponibles'],
+              T4: ['Consultar colores disponibles']
+            }
+          }
+        ]
+      },
+      {
+        id: 'amalfy',
+        name: 'AMALFY',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/AMALFY/ba8ef6d924c006d606284bfa2aea6950.jpg'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Verde oliva', 'Ladrillo', 'Verde aceituna', 'Negro', 'Chocolate'],
+              T2: ['Negro'],
+              T3: ['Negro'],
+              T5: ['Verde aceituna', 'Natural', 'Negro', 'Ladrillo']
+            }
+          }
+        ]
+      },
+      {
+        id: 'ayla',
+        name: 'AYLA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/AYLA/88df75b51ee6eb1b84ed26775cc25ff0.jpg',
+          'CATALOGO/AYLA/2002bb333256e8bfa6548a7a6631d015.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Negro', 'Beige'],
+              T2: ['Negro', 'Beige'],
+              T3: ['Negro', 'Beige'],
+              T4: ['Negro', 'Beige'],
+              T5: ['Beige']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bali',
+        name: 'BALI',
+        tags: ['SIN TAZAS', 'ESTAMPADOS'],
+        categories: ['SIN_TAZAS', 'ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BALI/2a5fe1b9d3f2b30f0307ee216cc2242b.jpg',
+          'CATALOGO/BALI/51842fcf2703b8fb3ddeec10c5423bdc.jpg',
+          'CATALOGO/BALI/53ac63dc0699b5f892febec6c8e8424f.jpg'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Estampa azul', 'Estampa flores'],
+              T2: ['Estampa azul', 'Estampa flores'],
+              T3: ['Estampa flores'],
+              T4: ['Estampa flores']
+            }
+          }
+        ]
+      },
+      {
+        id: 'beach',
+        name: 'BEACH',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BEACH/97b2481a741c5751b5a5457b89cc7ed4.jpg'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro', 'Verde aceituna', 'Chocolate', 'Nude'],
+              T2: ['Negro', 'Cobre', 'Chocolate']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bomb',
+        name: 'BOMB',
+        tags: ['REGULABLE', 'PARA ATAR', 'SIN TAZAS', 'ANIMAL PRINT'],
+        categories: ['SIN_TAZAS', 'ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BOMB REGULABLE_ATAR/c11fa21f442e25e59219bfe6287333e2.jpg',
+          'CATALOGO/BOMB REGULABLE_ATAR/d1da9c05459aea28d75a2ef85f317b88.jpg',
+          'CATALOGO/BOMB REGULABLE_ATAR/f97d6920e1f8bcca529478d987cd81f5.jpg',
+          'CATALOGO/BOMB REGULABLE_ATAR/0b23ce615152b67b9e32c6865c71b438.png',
+          'CATALOGO/BOMB REGULABLE_ATAR/4e16e5e30bb1c3ba38f3505404ac6fa5.png',
+          'CATALOGO/BOMB REGULABLE_ATAR/5e183789e95c0b647ac1bc0f71b29a2e.png',
+          'CATALOGO/BOMB REGULABLE_ATAR/6a680536f76e8f5b3938b94e07a96a39.png'
+        ],
+        variants: [
+          {
+            label: 'REGULABLE SIN TAZAS',
+            sizes: {
+              T1: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo'],
+              T2: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo'],
+              T3: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo'],
+              T4: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo']
+            }
+          },
+          {
+            label: 'PARA ATAR - SIN TAZAS',
+            sizes: {
+              T1: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo'],
+              T2: ['Animal print', 'Uva', 'Petroleo', 'Bordo'],
+              T3: ['Uva', 'Petroleo', 'Bordo'],
+              T4: ['Animal print', 'Uva', 'Chocolate', 'Petroleo', 'Bordo']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bonnie',
+        name: 'BONNIE',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BONNIE/07826ec65620e0cecf2bb1b9171740a7.png',
+          'CATALOGO/BONNIE/228e4e824a26b6d47b5087afac907ccf.png',
+          'CATALOGO/BONNIE/733f83c87a5e9ceb9db5c4737b7f0858.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Celeste', 'Negro', 'Rosa'],
+              T2: ['Celeste', 'Rosa'],
+              T3: ['Celeste', 'Rosa'],
+              T4: ['Celeste', 'Rosa'],
+              T5: ['Celeste', 'Negro', 'Rosa']
+            }
+          }
+        ]
+      },
+      {
+        id: 'boos',
+        name: 'BOOS',
+        tags: ['TRICOT'],
+        categories: ['TRICOT_LYCRA'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BOOS/1111cab4dad3d323c1abacc4baad694d.png'
+        ],
+        variants: [
+          {
+            label: 'Tricot',
+            sizes: {
+              T3: ['Negro'],
+              T4: ['Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bossa',
+        name: 'BOSSA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BOSSA/a3c87c371ffd891d179780acac300103.jpg',
+          'CATALOGO/BOSSA/4fd637ca5d8fb24ce4facb81b8f37ca8.png',
+          'CATALOGO/BOSSA/b951cd531eb369425288082611bf45ae.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Negro', 'Celeste'],
+              T2: ['Negro'],
+              T4: ['Negro'],
+              T5: ['Negro', 'Celeste']
+            }
+          }
+        ]
+      },
+      {
+        id: 'cali',
+        name: 'CALI',
+        tags: ['VEDETINA'],
+        categories: ['VEDETINA_LESS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/CALI/15020a1d96b6fe80f82759dc900231d6.png',
+          'CATALOGO/CALI/684fa95bfd69cc490c1aec9cd62c9f10.png',
+          'CATALOGO/CALI/8242f622f0e8ebc431eba32437b653d4.png'
+        ],
+        variants: [
+          {
+            label: 'Vedetina',
+            sizes: {
+              T1: ['Rosa', 'Verde', 'Champagne', 'Uva', 'Ladrillo'],
+              T2: ['Rosa', 'Verde', 'Champagne', 'Uva', 'Azul', 'Ladrillo'],
+              T3: ['Rosa', 'Azul', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'capri',
+        name: 'CAPRI',
+        tags: ['TRICOT LYCRA'],
+        categories: ['TRICOT_LYCRA'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/CAPRI/05d6bc178101788c2a7472ca4e74c865.png',
+          'CATALOGO/CAPRI/53397bc89d54c83e112d42f86b98188a.png',
+          'CATALOGO/CAPRI/66290d331f6979df8bf16744b479a330.png',
+          'CATALOGO/CAPRI/7ab62fcbff3ee761cf8f0e07a80a58dd.png'
+        ],
+        variants: [
+          {
+            label: 'Tricot Lycra',
+            sizes: {
+              T1: ['Verde militar', 'Verde ocean', 'Negro'],
+              T2: ['Verde militar', 'Chocolate', 'Verde ocean', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'cherry',
+        name: 'CHERRY',
+        tags: ['SIN TAZAS', 'CUADRILLÉ', 'ANIMAL PRINT'],
+        categories: ['SIN_TAZAS', 'ESTAMPADOS', 'ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/CHERRY/09cfb91607be398cfd2ec2a97b966f1c.jpg',
+          'CATALOGO/CHERRY/76c14b1c7ca139eac95c9c8820c507df.jpg',
+          'CATALOGO/CHERRY/b312cb6268ddd7691fc624b9a0743768.jpg',
+          'CATALOGO/CHERRY/fda1db6be8d30812a9a529908d76aeb4.jpg'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Texturada nude', 'Cuadrille bordo', 'Cuadrille amarillo', 'Texturada blanca y chocolate'],
+              T2: ['Texturada nude', 'Cuadrille bordo', 'Cuadrille amarillo', 'Texturada blanca y chocolate'],
+              T3: ['Texturada nude', 'Cuadrille bordo', 'Cuadrille amarillo', 'Texturada blanca y chocolate'],
+              T4: ['Animal print', 'Texturada nude', 'Cuadrille bordo', 'Cuadrille amarillo', 'Texturada blanca y chocolate']
+            }
+          }
+        ]
+      },
+      {
+        id: 'classy',
+        name: 'CLASSY',
+        tags: ['SIN TAZAS', 'ANIMAL PRINT'],
+        categories: ['SIN_TAZAS', 'ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/CLASSY/8f75450ac3efa1e3ad33a7b06a19e3b7.jpg',
+          'CATALOGO/CLASSY/11c2829d3cb48624e0763f486ca780a0.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro', 'Bordo', 'Animal print', 'Chocolate y natural', 'Verde pistacho y natural', 'Uva y natural', 'Natural y chocolate', 'Verde petroleo y aqua'],
+              T2: ['Negro', 'Bordo', 'Animal print', 'Chocolate y natural', 'Verde pistacho y natural', 'Uva y natural', 'Verde petroleo y aqua'],
+              T3: ['Negro', 'Bordo', 'Animal print', 'Chocolate y natural', 'Verde pistacho y natural', 'Uva y natural', 'Natural y chocolate', 'Verde petroleo y aqua'],
+              T4: ['Negro', 'Bordo', 'Animal print', 'Chocolate y natural', 'Verde pistacho y natural', 'Uva y natural', 'Natural y chocolate', 'Verde petroleo y aqua']
+            }
+          }
+        ]
+      },
+      {
+        id: 'duo',
+        name: 'DUO',
+        tags: ['SIN TAZAS', 'LUNARES', 'CUADRILLÉ'],
+        categories: ['SIN_TAZAS', 'ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/DUO/1.jpg',
+          'CATALOGO/DUO/1..jpg',
+          'CATALOGO/DUO/1...jpg',
+          'CATALOGO/DUO/.1..jpg',
+          'CATALOGO/DUO/.1...jpg',
+          'CATALOGO/DUO/759fb637e19ab2e5c4a152a3a67f2800.jpg',
+          'CATALOGO/DUO/bfd248ffb3aee84e519744e86d660211.jpg',
+          'CATALOGO/DUO/e15e497f549fdf557baf2b05643f8a6c.jpg',
+          'CATALOGO/DUO/e93b1097f09723593d35ed28df5f4e61.jpg',
+          'CATALOGO/DUO/,,1.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Lunares negro', 'Lunares chocolate'],
+              T2: ['Lunares negro', 'Lunares chocolate'],
+              T3: ['Lunares negro'],
+              T4: ['Lunares Chocolate', 'Lunares Negro', 'Lunares Blanco', 'Lunares celeste', 'Lunares rosa', 'Cuadrille verde', 'Cuadrille negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'fever',
+        name: 'FEVER',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/FEVER/94072d240952f70d97e282eb2e4176ed.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Salmon', 'Verde aceituna', 'Lila', 'Nude', 'Crema'],
+              T2: ['Salmon', 'Negro'],
+              T3: ['Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'goddes',
+        name: 'GODDES',
+        tags: ['LYCRA', 'SIN TAZAS'],
+        categories: ['TRICOT_LYCRA', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/GODDES/e735ffe1a3e967d7c1d3b76a473f3bba.jpg'
+        ],
+        variants: [
+          {
+            label: 'Lycra - Sin Tazas',
+            sizes: {
+              T1: ['Fucsia', 'Lima', 'Negro', 'Celeste', 'Lila'],
+              T2: ['Fucsia', 'Lima', 'Negro', 'Celeste', 'Lila'],
+              T3: ['Fucsia', 'Lima', 'Negro', 'Celeste', 'Lila'],
+              T4: ['Fucsia', 'Lima', 'Negro', 'Celeste', 'Lila']
+            }
+          }
+        ]
+      },
+      {
+        id: 'guinda',
+        name: 'GUINDA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/GUINDA/e24407b038239a736aa6759d9014a674.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Celeste'],
+              T3: ['Celeste'],
+              T4: ['Celeste'],
+              T5: ['Celeste']
+            }
+          }
+        ]
+      },
+      {
+        id: 'ibiza',
+        name: 'IBIZA',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/IBIZA/5154e29e70d43c648afe49e4cf2b193e.png',
+          'CATALOGO/IBIZA/a10d4b863584bd461eff24ff7cc7361b.png',
+          'CATALOGO/IBIZA/e357d99003808fd4fd0b63d563ecb658.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro', 'Chocolate oscuro', 'Chocolate claro'],
+              T2: ['Negro', 'Chocolate oscuro', 'Chocolate claro'],
+              T3: ['Negro', 'Chocolate oscuro', 'Chocolate claro'],
+              T4: ['Negro', 'Chocolate oscuro', 'Chocolate claro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'ivory',
+        name: 'IVORY',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/IVORY/633974900d9e7b6fa0c4788e182cf4d9.jpg',
+          'CATALOGO/IVORY/8058d95cf1570451eb3f6dea14243855.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Consultar colores disponibles'],
+              T2: ['Consultar colores disponibles'],
+              T3: ['Consultar colores disponibles'],
+              T4: ['Consultar colores disponibles']
+            }
+          }
+        ]
+      },
+      {
+        id: 'java',
+        name: 'JAVA',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/JAVA/5629c8d43f4534d1e6a2f1c5a2d6bfb6.png',
+          'CATALOGO/JAVA/6950d88edfee3199327833d40933e55c.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Consultar colores disponibles'],
+              T2: ['Consultar colores disponibles']
+            }
+          }
+        ]
+      },
+      {
+        id: 'kali',
+        name: 'KALI',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/KALI/bc52f192ddc91187583b05bfdad78c30.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Consultar colores disponibles'],
+              T3: ['Consultar colores disponibles']
+            }
+          }
+        ]
+      },
+      {
+        id: 'koa',
+        name: 'KOA',
+        tags: ['LESS REGULABLE', 'SIN TAZAS', 'ANIMAL PRINT', 'CUADRILLÉ'],
+        categories: ['VEDETINA_LESS', 'SIN_TAZAS', 'ANIMAL_PRINT', 'ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/KOA/0c4fe87375a157bbcc64fe9ac8a1a6d0.jpg',
+          'CATALOGO/KOA/130ed9d3c12e60b318a84b7e4be86996.jpg',
+          'CATALOGO/KOA/7f4904ec7ebec0afe2a78a94f8ddb6cc.jpg',
+          'CATALOGO/KOA/fe1581abc6a6ab5fa534d2b00b909a80.jpg'
+        ],
+        variants: [
+          {
+            label: 'Less Regulable - Sin Tazas',
+            sizes: {
+              T1: ['Verde pistacho y natural', 'Uva y natural', 'Verde petroleo y aqua', 'Animal print', 'Chocolate y natural', 'Cuadrille bordo', 'Cuadrille amarillo', 'Negro liso', 'Chocolate liso'],
+              T2: ['Animal print', 'Chocolate y natural', 'Cuadrille bordo', 'Cuadrille amarillo', 'Negro liso', 'Chocolate liso'],
+              T3: ['Verde pistacho y natural', 'Uva y natural', 'Verde petroleo y aqua', 'Animal print', 'Chocolate y natural', 'Cuadrille bordo', 'Cuadrille amarillo', 'Negro liso', 'Chocolate liso'],
+              T4: ['Bordo', 'Animal print', 'Verde pistacho y natural', 'Uva y natural', 'Natural y chocolate', 'Verde petroleo y aqua', 'Cuadrille bordo', 'Cuadrille amarillo', 'Negro liso', 'Chocolate liso']
+            }
+          }
+        ]
+      },
+      {
+        id: 'koak',
+        name: 'KOAK',
+        tags: ['LESS', 'SIN TAZAS', 'ESTAMPADOS'],
+        categories: ['VEDETINA_LESS', 'SIN_TAZAS', 'ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/KOAK/2012595491c26cb83499469bad08f947.jpg',
+          'CATALOGO/KOAK/7924da985632e184ea222ed7fac21ce2.jpg',
+          'CATALOGO/KOAK/8bbc833e44127af376c864c6a256c225.jpg',
+          'CATALOGO/KOAK/e41e52e8614409477d355f474d47cdb0.jpg'
+        ],
+        variants: [
+          {
+            label: 'Less - Sin Tazas',
+            sizes: {
+              T1: ['Estampa coral', 'Lavanda liso'],
+              T2: ['Estampa coral', 'Lavanda liso'],
+              T3: ['Lavanda liso'],
+              T4: ['Lavanda liso']
+            }
+          }
+        ]
+      },
+      {
+        id: 'koko',
+        name: 'KOKO',
+        tags: ['EDICIÓN SIGNATURE'],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/KOKO/feaeb94834834884d3bccac9a94a27b4.jpg',
+          'CATALOGO/KOKO/505f719d05b01db39373970a8ed7650d.png',
+          'CATALOGO/KOKO/557f541f01a293dae96d40c7e0b209a4.png',
+          'CATALOGO/KOKO/66b462a4b74b8d84ea5f1831305237df.png',
+          'CATALOGO/KOKO/ddccf9c23009f4dd18cfa1ac1e530f3f.png'
+        ],
+        variants: [
+          {
+            label: 'Amarillo & Rosa',
+            sizes: {
+              T1: ['Amarillo'],
+              T2: ['Rosa', 'Amarillo'],
+              T3: ['Rosa', 'Amarillo'],
+              T4: ['Rosa'],
+              T5: ['Rosa', 'Amarillo']
+            }
+          },
+          {
+            label: 'Bordo & Celeste',
+            sizes: {
+              T2: ['Bordo', 'Celeste'],
+              T3: ['Bordo', 'Celeste'],
+              T4: ['Bordo', 'Celeste'],
+              T5: ['Bordo', 'Celeste']
+            }
+          }
+        ]
+      },
+      {
+        id: 'lenna',
+        name: 'LENNA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/LENNA/82c39de4d575ed9ce362569d21b6400d.jpg',
+          'CATALOGO/LENNA/e9eb107061e108544ea9f472ccc78c08.jpg',
+          'CATALOGO/LENNA/2c8310bec8505c3072153d5c65c2910c.png',
+          'CATALOGO/LENNA/44841b530d8d21ea2d3e0d084184f97c.png',
+          'CATALOGO/LENNA/4b04037073ff6dd007a9512873b708d3.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T3: ['Natural y uva', 'Petroleo y natural', 'Malbec y natural', 'Natural nude y negro'],
+              T4: ['Natural y uva', 'Celeste y natural', 'Petroleo y natural', 'Malbec y natural', 'Natural nude y negro'],
+              T5: ['Natural y uva', 'Celeste y natural', 'Petroleo y natural', 'Malbec y natural', 'Natural nude y negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'lua',
+        name: 'LUÁ',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/LUÁ/4caa2c1009d2c361e7db09c56033d065.jpg',
+          'CATALOGO/LUÁ/3d4d3c0d881b896984c2d0a24b7c76bd.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Rosa y malbec', 'Malbec y blanco'],
+              T3: ['Rosa y malbec', 'Malbec y blanco'],
+              T4: ['Malbec y blanco'],
+              T5: ['Rosa y malbec', 'Malbec y blanco']
+            }
+          }
+        ]
+      },
+      {
+        id: 'malibu',
+        name: 'MALIBU',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MALIBU/2a53911cfcba16a534bfb11aedfc93aa.png',
+          'CATALOGO/MALIBU/92d82915b5635a42d3e85e1271bbed2e.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Verde esmeralda', 'Rosa', 'Salmon', 'Coral neon', 'Fucsia', 'Lila', 'Aqua', 'Rosa fluo'],
+              T2: ['Rojo', 'Beige', 'Fucsia', 'Salmon', 'Aqua', 'Verde militar', 'Verde lima', 'Rosa'],
+              T3: ['Lila', 'Salmon', 'Petroleo', 'Crema', 'Fucsia', 'Azul francia', 'Aqua', 'Rosa'],
+              T4: ['Salmon', 'Rosa', 'Crema', 'Coral fluo']
+            }
+          }
+        ]
+      },
+      {
+        id: 'malva',
+        name: 'MALVA',
+        tags: ['SIN TAZAS', 'ANIMAL PRINT'],
+        categories: ['SIN_TAZAS', 'ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MALVA/915faf2046f05fd1866264acb1deb35c.jpg',
+          'CATALOGO/MALVA/ac1c4f25277ba4539460d38ce9393a98.jpg'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Textura nude', 'Animal print'],
+              T3: ['Textura nude'],
+              T4: ['Textura nude', 'Animal print']
+            }
+          }
+        ]
+      },
+      {
+        id: 'mare',
+        name: 'MARÉ',
+        tags: ['TIRA DESMONTABLE'],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MARÉ/c1881c9cbe020414afa559924d57cea8.jpg',
+          'CATALOGO/MARÉ/d81360190e140ecbb03b484fba5a3834.jpg',
+          'CATALOGO/MARÉ/f0332248754284d096a3865df69e21c8.jpg',
+          'CATALOGO/MARÉ/48056bd8a07ff8b6ad4a65bca196acfa.png'
+        ],
+        variants: [
+          {
+            label: 'Tira Desmontable',
+            sizes: {
+              T1: ['Negro', 'Pistacho', 'Bordo', 'Chocolate', 'Petroleo'],
+              T2: ['Negro', 'Pistacho', 'Bordo', 'Chocolate', 'Petroleo'],
+              T3: ['Negro', 'Pistacho', 'Bordo', 'Chocolate', 'Petroleo'],
+              T4: ['Negro', 'Pistacho', 'Bordo', 'Chocolate', 'Petroleo']
+            }
+          }
+        ]
+      },
+      {
+        id: 'mavi',
+        name: 'MAVI',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MAVI/e63869fd892e69c61f212b679948f74b.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Chocolate y natural', 'Azul marino y natural', 'Negro y blanco', 'Petroleo y rosa chicle'],
+              T2: ['Chocolate y natural', 'Azul marino y natural', 'Negro y blanco', 'Petroleo y rosa chicle'],
+              T3: ['Chocolate y natural', 'Azul marino y natural', 'Negro y blanco', 'Petroleo y rosa chicle'],
+              T4: ['Chocolate y natural', 'Azul marino y natural', 'Petroleo y rosa chicle'],
+              T5: ['Natural y chocolate', 'Chocolate y natural', 'Azul marino y natural', 'Negro y blanco', 'Petroleo y rosa chicle']
+            }
+          }
+        ]
+      },
+      {
+        id: 'miami',
+        name: 'MIAMI',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MIAMI/5f454158ec20ab6af9fa07d6584625f2.png',
+          'CATALOGO/MIAMI/6d9ffced48283e8f17c09e8ad400c38a.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T4: ['Negro'],
+              T5: ['Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'moka',
+        name: 'MOKA',
+        tags: ['TRICOT LYCRA', 'SIN TAZAS'],
+        categories: ['TRICOT_LYCRA', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MOKA/0602a09941dab13e6d8aa991ac0fe9cf.png',
+          'CATALOGO/MOKA/10814ebf15e7802c0cc41a46fed8a86c.png',
+          'CATALOGO/MOKA/482af915b799ca39926387188fd0d619.png',
+          'CATALOGO/MOKA/528cf18e33e8656d431b93e05930de21.png',
+          'CATALOGO/MOKA/a184e658762788121805b78c84ff90eb.png',
+          'CATALOGO/MOKA/bade4a24feb4e8c79db6d14de2de0e36.png',
+          'CATALOGO/MOKA/c215de6168dc577d2d4c02cb57fb410f.png'
+        ],
+        variants: [
+          {
+            label: 'Tricot Lycra (Sin Tazas)',
+            sizes: {
+              T1: ['Natural tira lila', 'Verde esmeralda tira natural', 'Verde petroleo tira aqua', 'Natural tira verde oliva', 'Natural tira chocolate', 'Natural tira azul francia', 'Chocolate y natural'],
+              T2: ['Natural tira lila', 'Verde esmeralda tira natural', 'Verde petroleo tira aqua', 'Natural tira verde oliva', 'Natural tira chocolate', 'Natural tira azul francia', 'Chocolate y natural'],
+              T3: ['Natural tira lila', 'Verde esmeralda tira natural', 'Verde petroleo tira aqua', 'Natural tira verde oliva', 'Natural tira chocolate', 'Natural tira azul francia', 'Chocolate y natural'],
+              T4: ['Natural tira lila', 'Verde esmeralda tira natural', 'Verde petroleo tira aqua', 'Natural tira verde oliva', 'Natural tira chocolate', 'Natural tira azul francia', 'Chocolate y natural']
+            }
+          }
+        ]
+      },
+      {
+        id: 'moov',
+        name: 'MOOV',
+        tags: ['SIN STOCK'],
+        categories: [],
+        outOfStock: true,
+        images: [
+          'CATALOGO/MOOV/c58246bce9b3b04bd12907c0c319d758.png',
+          'CATALOGO/MOOV/d572af80e886bac338f8c57a1095a8f4.png'
+        ],
+        variants: []
+      },
+      {
+        id: 'musa',
+        name: 'MUSA',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MUSA/5fb91bfcd876f33ac002457dada740d8.jpg',
+          'CATALOGO/MUSA/89d8c64c01dc5dea4e04986fc572ce7a.jpg',
+          'CATALOGO/MUSA/eb47e8d41f19e53f824ca202961e2077.jpg',
+          'CATALOGO/MUSA/790ba52dcd84bd1bc827fa44d69c54c5.png',
+          'CATALOGO/MUSA/aa95d9acd75f61da885a828da143ce1f.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Chocolate y celeste', 'Chocolate y rosa', 'Amarillo y chocolate'],
+              T2: ['Chocolate y celeste', 'Chocolate y rosa'],
+              T3: ['Chocolate y celeste', 'Chocolate y rosa'],
+              T4: ['Chocolate y celeste', 'Chocolate y rosa', 'Chocolate y natural', 'Bordo y natural', 'Amarillo y chocolate']
+            }
+          }
+        ]
+      },
+      {
+        id: 'nacar',
+        name: 'NÁCAR',
+        tags: ['SIN STOCK'],
+        categories: [],
+        outOfStock: true,
+        images: [
+          'CATALOGO/NÁCAR/ec0ad460bd7125a7a33dae3a33302fea.jpg',
+          'CATALOGO/NÁCAR/1f7f11e475012f2237c361ee8f382c3c.png',
+          'CATALOGO/NÁCAR/4a27d725ea2f8aba8c095da88212fff0.png',
+          'CATALOGO/NÁCAR/6bd9cd66f25a70cd3c952ea9644c83a4.png',
+          'CATALOGO/NÁCAR/8344bca773c4b77d08a510b90366ccbc.png',
+          'CATALOGO/NÁCAR/a7d99bfbf5abc003f24a0f3510d23ff2.png',
+          'CATALOGO/NÁCAR/c971c35b6e3c574b50f592c042ee1a9c.png'
+        ],
+        variants: []
+      },
+      {
+        id: 'nixie',
+        name: 'NIXIE',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/NIXIE/1e78151299fe3017d478033e3d44266f.png',
+          'CATALOGO/NIXIE/52e2d72d41ffe262409aecadac972069.png',
+          'CATALOGO/NIXIE/7e60a8aa523ab7555e5e8d1ef470a86e.png',
+          'CATALOGO/NIXIE/b0f47a3bc1e92dd81b6932d8401ef51f.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro y blanco', 'Chocolate y celeste', 'Chocolate y natural'],
+              T2: ['Negro y blanco', 'Chocolate y celeste'],
+              T3: ['Negro y blanco', 'Chocolate y celeste'],
+              T4: ['Negro y blanco', 'Chocolate y celeste'],
+              T5: ['Negro y blanco', 'Chocolate y celeste', 'Bordo y rosa'],
+              T6: ['Negro y blanco', 'Chocolate y celeste', 'Chocolate y natural']
+            }
+          }
+        ]
+      },
+      {
+        id: 'niza',
+        name: 'NIZA',
+        tags: ['TELA RIO', 'SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/NIZA/TELA RIO.jpg'
+        ],
+        variants: [
+          {
+            label: 'Tela Río - Sin Tazas',
+            sizes: {
+              T1: ['Celeste', 'Aqua', 'Coral', 'Negro', 'Cobre', 'Militar'],
+              T2: ['Negro', 'Cobre', 'Blanco', 'Celeste', 'Aqua', 'Azul marino'],
+              T3: ['Aqua', 'Coral', 'Negro', 'Celeste', 'Blanco'],
+              T4: ['Aqua', 'Coral', 'Negro', 'Verde militar']
+            }
+          }
+        ]
+      },
+      {
+        id: 'niza-2',
+        name: 'NIZA 2',
+        tags: ['TRICOT', 'SIN TAZAS'],
+        categories: ['TRICOT_LYCRA', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/NIZA 2/TELA TRICOT.png'
+        ],
+        variants: [
+          {
+            label: 'Tricot - Sin Tazas',
+            sizes: {
+              T2: ['Verde aceituna', 'Negro', 'Lila'],
+              T3: ['Verde aceituna', 'Negro', 'Lila'],
+              T4: ['Verde aceituna', 'Negro', 'Lila', 'Oliva']
+            }
+          }
+        ]
+      },
+      {
+        id: 'noa',
+        name: 'NOA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/NOA/b3ac7644933fde973f59984fcdd17da2.jpg',
+          'CATALOGO/NOA/d69f86d78d9f26c521c02b0ab41a15d3.jpg',
+          'CATALOGO/NOA/ca0c991986fbddca74ffa2f8756c76f6.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Natural y malbec', 'Chocolate'],
+              T3: ['Natural y malbec', 'Chocolate', 'Petroleo'],
+              T4: ['Natural y malbec', 'Chocolate'],
+              T5: ['Malbec', 'Natural y malbec']
+            }
+          }
+        ]
+      },
+      {
+        id: 'rio',
+        name: 'RÍO',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/RÍO/52b4b102735344b58b307eea549b1f77.png',
+          'CATALOGO/RÍO/7074cf704b9a1a1b0e4d9365e62aaa92.png',
+          'CATALOGO/RÍO/e659f6c89131a6e579ca08ec33b21d17.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro', 'Chocolate oscuro', 'Chocolate claro'],
+              T2: ['Chocolate oscuro', 'Chocolate claro'],
+              T3: ['Negro', 'Chocolate oscuro', 'Chocolate claro'],
+              T4: ['Chocolate oscuro', 'Chocolate claro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'safari',
+        name: 'SAFARI',
+        tags: ['ANIMAL PRINT'],
+        categories: ['ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SAFARI/3cc2717438579e4cc0f74cd3b314ad84.png',
+          'CATALOGO/SAFARI/4610f0fe2569c7be5c0d1591f417dba5.png',
+          'CATALOGO/SAFARI/b022759f78b84ae61f01a4d0d0642fe2.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Animal print'],
+              T2: ['Animal print'],
+              T5: ['Animal print']
+            }
+          }
+        ]
+      },
+      {
+        id: 'salina',
+        name: 'SALINA',
+        tags: ['SEMIVEDETINA', 'SIN TAZAS'],
+        categories: ['VEDETINA_LESS', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SALINA/c33e811b6181785a38f4d0163db8739e.jpg',
+          'CATALOGO/SALINA/fc5ea550597a3c43904d19e65ab6bf46.jpg'
+        ],
+        variants: [
+          {
+            label: 'Semivedetina - Sin Tazas',
+            sizes: {
+              T1: ['Negro'],
+              T2: ['Negro'],
+              T3: ['Negro'],
+              T4: ['Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'savana',
+        name: 'SAVANA',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SAVANA/0afee4b4d21e08df5d7e7c32e47524fb.png',
+          'CATALOGO/SAVANA/7f401607113ca97ea14def4c9af38f9f.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro y beige'],
+              T2: ['Negro y crema'],
+              T3: ['Negro y crema']
+            }
+          }
+        ]
+      },
+      {
+        id: 'summer',
+        name: 'SUMMER',
+        tags: ['CUADRILLÉ'],
+        categories: ['ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SUMMER/2584130b7d77229edaf38d6dc1cedcb2.jpg',
+          'CATALOGO/SUMMER/fd79b5d47ae0cf588191240cd7f4135a.jpg',
+          'CATALOGO/SUMMER/4f081af35fcb499eb4f491aba559309a.png',
+          'CATALOGO/SUMMER/fca9113b934dc3aa9e48361e9e1d0bbd.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Cuadrille fucsia', 'Cuadrille fucsia y uva'],
+              T2: ['Cuadrille fucsia', 'Cuadrille fucsia y uva', 'Cuadrille chocolate'],
+              T3: ['Cuadrille fucsia', 'Cuadrille fucsia y uva', 'Cuadrille chocolate'],
+              T4: ['Cuadrille fucsia', 'Cuadrille fucsia y uva', 'Cuadrille chocolate'],
+              T5: ['Cuadrille celeste', 'Cuadrille fucsia', 'Cuadrille fucsia y uva', 'Cuadrille chocolate']
+            }
+          }
+        ]
+      },
+      {
+        id: 'sunday',
+        name: 'SUNDAY',
+        tags: ['CUADRILLÉ'],
+        categories: ['ESTAMPADOS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SUNDAY/f3faea75b2747add2f681c9830f2fd81.jpg',
+          'CATALOGO/SUNDAY/6b93189d1e03ce383921594da6ff51c8.png',
+          'CATALOGO/SUNDAY/d18c350ea34e1e0a5edd37da0dc0b9cc.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Chocolate', 'Petroleo', 'Cuadrille Rojo', 'Cuadrille amarillo'],
+              T2: ['Chocolate', 'Petroleo', 'Cuadrille Rojo', 'Cuadrille amarillo'],
+              T3: ['Chocolate', 'Petroleo', 'Cuadrille Rojo', 'Cuadrille amarillo', 'Natural'],
+              T4: ['Negro', 'Chocolate', 'Petroleo', 'Cuadrille Rojo', 'Cuadrille amarillo', 'Natural'],
+              T5: ['Negro', 'Chocolate', 'Petroleo', 'Cuadrille Rojo', 'Cuadrille amarillo', 'Natural']
+            }
+          }
+        ]
+      },
+      {
+        id: 'sunset',
+        name: 'SUNSET',
+        tags: ['SEMIVEDETINA', 'SIN TAZAS'],
+        categories: ['VEDETINA_LESS', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SUNSET/28ce6c2ef2500c6df6d3518bd0d15539.jpg'
+        ],
+        variants: [
+          {
+            label: 'Semivedetina - Sin Tazas',
+            sizes: {
+              T1: ['Cobre', 'Verde aceituna', 'Negro', 'Chocolate'],
+              T2: ['Negro', 'Verde aceituna', 'Cobre']
+            }
+          }
+        ]
+      },
+      {
+        id: 'sury',
+        name: 'SURY',
+        tags: ['BICOLOR'],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SURY/018c7a8aa7292295c943d518c2131a68.png',
+          'CATALOGO/SURY/a349bd56f01c6dfa6d88d7f0273558aa.png',
+          'CATALOGO/SURY/aa8c622f6139eb299353ee78230db1de.png'
+        ],
+        variants: [
+          {
+            label: 'Combinados',
+            sizes: {
+              T1: ['Turquesa y verde menta', 'Naranja y amarillo', 'Blanco y negro', 'Azul nautico y celeste', 'Verde aceituna y negro', 'Negro y ladrillo', 'Azul y naranja', 'Verde lima y verde aceituna', 'Rosa coral y magenta', 'Negro y blanco', 'Chocolate oscuro y natural', 'Verde aceituna y verde lima'],
+              T2: ['Naranja y amarillo', 'Amarillo y naranja', 'Verde lima y coral neon', 'Blanco y negro', 'Negro y blanco', 'Verde aceituna y negro', 'Lila y lavanda', 'Ladrillo y blanco', 'Verde lima y negro', 'Chocolate claro y natural', 'Rosa y aqua', 'Lila y rosa', 'Chocolate y natural', 'Mango y naranja', 'Chocolate y vison', 'Rosa coral y magenta', 'Celeste y naranja'],
+              T3: ['Verde lima y negro', 'Amarillo y naranja', 'Azul francia y blanco', 'Verde aceituna y lima', 'Rosa y lavanda', 'Coral neon y negro', 'Negro y ladrillo', 'Celeste y azul francia', 'Naranja y amarillo', 'Negro y blanco', 'Lavanda y rosa', 'Negro y verde aceituna', 'Verde aceituna y negro', 'Naranja y verde menta', 'Chocolate claro y natural'],
+              T4: ['Blanco y negro', 'Rosa bebe y aqua', 'Ladrillo y mango', 'Verde oliva y lima', 'Verde Aqua y negro', 'Negro y blanco', 'Naranja y blanco', 'Negro y ciruela', 'Lila y natural', 'Fucsia y rosa coral', 'Rosa coral y rojo', 'Salmon y chocolate', 'Celeste y azul francia', 'Nude y chocolate', 'Chocolate oscuro y natural'],
+              T5: ['Negro y verde', 'Aqua y rosa bebe', 'Naranja y salmon', 'Lila y fucsia', 'Negro y blanco', 'Chocolate y nude']
+            }
+          }
+        ]
+      },
+      {
+        id: 'wave',
+        name: 'WAVE',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/WAVE/91917223cb89b2652baf08c5b10b7559.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Negro', 'Verde aceituna', 'Ladrillo', 'Nude', 'Chocolate'],
+              T2: ['Natural', 'Negro'],
+              T3: ['Negro'],
+              T4: ['Natural', 'Negro', 'Nude']
+            }
+          }
+        ]
+      },
+      {
+        id: 'white',
+        name: 'WHITE',
+        tags: ['MICROFIBRA BICOLOR', 'SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/WHITE/f333ec6ad7257f6680e4e470e30ff1d9.jpg'
+        ],
+        variants: [
+          {
+            label: 'Microfibra Bicolor - Sin Tazas',
+            sizes: {
+              T1: ['Microfibra Bicolor'],
+              T2: ['Microfibra Bicolor'],
+              T3: ['Microfibra Bicolor'],
+              T4: ['Microfibra Bicolor']
+            }
+          }
+        ]
+      },
+      {
+        id: 'wildy',
+        name: 'WILDY',
+        tags: ['SIN TAZAS'],
+        categories: ['SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/WILDY/48db8094d05f4bcc11dca00a89d631ad.png',
+          'CATALOGO/WILDY/b6e33b146e823026274628110eb8fdc4.png'
+        ],
+        variants: [
+          {
+            label: 'Sin Tazas',
+            sizes: {
+              T1: ['Negro'],
+              T2: ['Negro'],
+              T3: ['Negro', 'Chocolate oscuro', 'Beige'],
+              T4: ['Negro', 'Chocolate oscuro', 'Beige'],
+              T5: ['Negro', 'Chocolate oscuro', 'Beige']
+            }
+          }
+        ]
+      },
+      {
+        id: 'zafira',
+        name: 'ZAFIRA',
+        tags: ['VEDETINA', 'AMARA BOMBI LESS', 'SIN TAZAS'],
+        categories: ['VEDETINA_LESS', 'SIN_TAZAS'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/ZAFIRA/46d2279a157d21bb388c2bed617d2e03.jpg',
+          'CATALOGO/ZAFIRA/cb00e39d68822ee6cd86a3292937ce56.jpg',
+          'CATALOGO/ZAFIRA/17e069d93691c39e4972204a9c923e8b.png',
+          'CATALOGO/ZAFIRA/523152608094f2d0bd8a858717c9c78a.png',
+          'CATALOGO/ZAFIRA/d325769566533e93380479c1765600c6.png'
+        ],
+        variants: [
+          {
+            label: 'VEDETINA - SIN TAZAS',
+            sizes: {
+              T1: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora'],
+              T2: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora'],
+              T3: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora'],
+              T4: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora']
+            }
+          },
+          {
+            label: 'AMARA BOMBI LESS - SIN TAZAS',
+            sizes: {
+              T1: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora'],
+              T2: ['Negro', 'Pistacho', 'Chocolate'],
+              T3: ['Negro', 'Pistacho', 'Petroleo', 'Chocolate', 'Mora'],
+              T4: ['Pistacho', 'Petroleo', 'Chocolate', 'Mora']
+            }
+          }
+        ]
+      },
+      {
+        id: 'zizi',
+        name: 'ZIZI',
+        tags: ['MORLEY'],
+        categories: ['TRICOT_LYCRA'],
+        outOfStock: false,
+        images: [
+          'CATALOGO/ZIZI/8b59d9fe9356c51713f4ba3e6b3829fd.jpg'
+        ],
+        variants: [
+          {
+            label: 'Morley',
+            sizes: {
+              T1: ['Celeste', 'Lila', 'Verde pistacho', 'Verde militar', 'Negro', 'Chocolate'],
+              T2: ['Celeste', 'Lila', 'Verde pistacho', 'Naranja', 'Negro'],
+              T3: ['Celeste', 'Verde pistacho', 'Naranja']
+            }
+          }
+        ]
+      },
+      {
+        id: 'caprid',
+        name: 'CAPRID',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/CAPRID/CAPRI.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Verde aceituna', 'Salmon', 'Negro', 'Turquesa'],
+              T2: ['Turquesa', 'Salmon'],
+              T3: ['Verde aceituna', 'Salmon', 'Turquesa', 'Negro'],
+              T4: ['Verde aceituna', 'Salmon', 'Turquesa', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'terra',
+        name: 'TERRA',
+        tags: ['SIN STOCK'],
+        categories: [],
+        outOfStock: true,
+        images: [
+          'CATALOGO/TERRA/c1d7724b5f3ddf7b7d15fbda37dcd654.png'
+        ],
+        variants: []
+      },
+      {
+        id: 'kaia',
+        name: 'KAIA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/KAIA/e009fb471d8f83fbb5a988e7b462ddcd.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Chocolate y natural', 'Bordo y natural'],
+              T3: ['Negro y blanco'],
+              T4: ['Chocolate y natural', 'Bordo y natural']
+            }
+          }
+        ]
+      },
+      {
+        id: 'vitta',
+        name: 'VITTA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/VITTA/2e5f7f19804724ef60aaa84fa4ee11f0.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Natural y rosa chicle'],
+              T3: ['Natural y celeste', 'Natural y rosa chicle'],
+              T4: ['Natural y celeste', 'Natural y rosa chicle'],
+              T5: ['Natural y celeste', 'Natural y rosa chicle']
+            }
+          }
+        ]
+      },
+      {
+        id: 'ola',
+        name: 'OLA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/OLA/265c25c0298039529716374709e56599.png',
+          'CATALOGO/OLA/2866f52bb9c720a4a20a1f718f258f36.png',
+          'CATALOGO/OLA/df3d8477d1216a72353c69fe4cb943cc.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Blanco']
+            }
+          }
+        ]
+      },
+      {
+        id: 'nero',
+        name: 'NERO',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/NERO/dcccdb21d337caa26b1308d2447119f8.png',
+          'CATALOGO/NERO/dfe6bba41cb7d9b510287052f99a65e0.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Blanco y negro'],
+              T2: ['Blanco y negro'],
+              T3: ['Blanco y negro', 'Negro y blanco'],
+              T4: ['Blanco y negro', 'Negro y blanco']
+            }
+          }
+        ]
+      },
+      {
+        id: 'pink',
+        name: 'PINK',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/PINK/801bece34c63f7959d84dd0904c4fa9a.png',
+          'CATALOGO/PINK/f47748e16979c99f676aa65359c19cb5.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T2: ['Blanco'],
+              T3: ['Rosa'],
+              T4: ['Rosa']
+            }
+          }
+        ]
+      },
+      {
+        id: 'verano',
+        name: 'VERANO',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/VERANO/161cadf28cde837b9f7372ba8a950854.png',
+          'CATALOGO/VERANO/a2332c6b72f613e62352549ed79ba5e9.png',
+          'CATALOGO/VERANO/e4ee523c86a9fa4240a3c5f195f7fa90.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Chocolate', 'Negro', 'Rosa', 'Naranja'],
+              T2: ['Chocolate', 'Negro', 'Rosa', 'Naranja'],
+              T3: ['Chocolate', 'Negro', 'Rosa', 'Naranja'],
+              T4: ['Chocolate', 'Negro', 'Rosa', 'Naranja']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bora-bora',
+        name: 'BORA BORA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BORA BORA/580b721d12f756b0cf3bced86594a1cb.jpg',
+          'CATALOGO/BORA BORA/ecc5cbf74d9eb0b1b171422b217fa433.jpg',
+          'CATALOGO/BORA BORA/bf69b0c96f660a59fec532532d27a55d.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Blanco y negro'],
+              T3: ['Blanco y negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'bianca',
+        name: 'BIANCA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/BIANCA/955f02afcd1eac2f8509696973ede865.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Verde lima', 'Coral neon'],
+              T2: ['Lila', 'Aqua', 'Verde esmeralda', 'Verde lima', 'Crema', 'Coral neon'],
+              T3: ['Crema', 'Lila', 'Aqua', 'Verde Lima', 'Coral neon'],
+              T4: ['Crema', 'Fucsia', 'Coral neon', 'Verde lima', 'Lila', 'Aqua', 'Verde esmeralda']
+            }
+          }
+        ]
+      },
+      {
+        id: 'mika',
+        name: 'MIKA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MIKA/a6d830898c170f88bfa2f5b195dbe230.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Celeste'],
+              T2: ['Celeste'],
+              T3: ['Celeste'],
+              T4: ['Celeste'],
+              T5: ['Celeste', 'Rosa chicle', 'Blanco', 'Petroleo']
+            }
+          }
+        ]
+      },
+      {
+        id: 'val',
+        name: 'VAL',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Lavanda', 'Verde menta', 'Mostaza', 'Celeste', 'Turquesa', 'Coral fluo', 'Mango', 'Negro', 'Chocolate'],
+              T2: ['Lavanda', 'Verde menta', 'Celeste', 'Mango', 'Negro', 'Chocolate'],
+              T3: ['Lavanda', 'Verde menta', 'Celeste', 'Mango', 'Mostaza', 'Verde aceituna', 'Rosa bebe', 'Turquesa', 'Negro', 'Chocolate'],
+              T4: ['Lavanda', 'Verde menta', 'Celeste', 'Mango', 'Beige', 'Coral fluo', 'Verde aceituna', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'luz',
+        name: 'LUZ',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/LUZ/100857c3b351ac2cd846623047720763.png',
+          'CATALOGO/LUZ/12282d5f6577a6d02bcd3bc6cdb4a1ac.png',
+          'CATALOGO/LUZ/978b03d656c52bca4efaf05feac79c8b.png',
+          'CATALOGO/LUZ/ea1514c503216a401d56984cb3ca04f8.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Petroleo', 'Chocolate', 'Verde militar', 'Negro'],
+              T2: ['Petroleo', 'Chocolate', 'Verde militar', 'Negro'],
+              T3: ['Petroleo', 'Chocolate', 'Verde militar', 'Negro'],
+              T4: ['Verde militar', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'mar',
+        name: 'MAR',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/MAR/b0a606fb8e2265aea5f20d81fdcae8d9.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Negro', 'Verde oliva', 'Coral neon'],
+              T2: ['Negro', 'Verde oliva', 'Coral neon'],
+              T3: ['Negro', 'Verde oliva', 'Coral neon'],
+              T4: ['Negro', 'Verde oliva', 'Coral neon']
+            }
+          }
+        ]
+      },
+      {
+        id: 'tina',
+        name: 'TINA',
+        tags: ['ANIMAL PRINT'],
+        categories: ['ANIMAL_PRINT'],
+        outOfStock: false,
+        images: [],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T4: ['Chocolate claro', 'Bordo', 'Verde', 'Amarillo pastel', 'Celeste', 'Animal print', 'Azul nautico']
+            }
+          }
+        ]
+      },
+      {
+        id: 'juliana',
+        name: 'JULIANA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/JULIANA/405b8fdbbaca76e4b6cd9b5bfa5ba9d0.png'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Mostaza', 'Coral neon', 'Salmon', 'Negro', 'Lima', 'Militar'],
+              T2: ['Mostaza', 'Coral neon', 'Salmon', 'Negro'],
+              T3: ['Coral neon', 'Mostaza', 'Coral', 'Salmon', 'Militar', 'Lima', 'Negro']
+            }
+          }
+        ]
+      },
+      {
+        id: 'samara',
+        name: 'SAMARA',
+        tags: [],
+        categories: [],
+        outOfStock: false,
+        images: [
+          'CATALOGO/SAMARA/39867d9aacf14f646613485bb72db030.jpg'
+        ],
+        variants: [
+          {
+            label: 'Estándar',
+            sizes: {
+              T1: ['Negro y blanco'],
+              T2: ['Natural y chocolate'],
+              T3: ['Natural y chocolate'],
+              T4: ['Natural y chocolate'],
+              T5: ['Chocolate y natural', 'Negro y blanco', 'Natural y chocolate']
+            }
+          }
+        ]
+      },
+      {
+        id: 'yasmin',
+        name: 'YASMIN',
+        tags: ['SIN STOCK'],
+        categories: [],
+        outOfStock: true,
+        images: [
+          'CATALOGO/YASMIN/b03ea27517c872c9dc76b49d5e511abd.png',
+          'CATALOGO/YASMIN/b0cf9b74fdc8791d9ac1d3694642eb40.png',
+          'CATALOGO/YASMIN/c15e5fcd5096cb502f63603a82fbe09c.png',
+          'CATALOGO/YASMIN/fdaa72baafd8f39851a5a2466e13c8f1.png'
+        ],
+        variants: []
+      },
+      {
+        id: 'aruba',
+        name: 'ARUBA',
+        tags: ['SIN STOCK'],
+        categories: [],
+        outOfStock: true,
+        images: [],
+        variants: []
+      }
+    ];
+
+    /**
+     * =========================================================================
+     * 2. MAPEO DE SWATCHES / MUESTRAS DE COLOR
+     * =========================================================================
+     */
+    const COLOR_SWATCH_MAP = {
+      negro: '#1C1917',
+      blanco: '#FFFFFF',
+      natural: '#F5EFE6',
+      crema: '#FAF3E0',
+      beige: '#DFC7A7',
+      nude: '#D8B49C',
+      vison: '#A68A76',
+      chocolate: '#4E2E20',
+      'chocolate oscuro': '#3A2016',
+      'chocolate claro': '#7A5039',
+      cobre: '#B85D3B',
+      ladrillo: '#B3472A',
+      rojo: '#DC2626',
+      bordo: '#6E1423',
+      malbec: '#591224',
+      uva: '#5B2C6F',
+      ciruela: '#4A1942',
+      mora: '#511845',
+      fucsia: '#E62E6B',
+      magenta: '#D91E63',
+      rosa: '#F48FB1',
+      'rosa chicle': '#FF5C93',
+      'rosa bebe': '#FADADD',
+      'rosa fluo': '#FF1E7A',
+      'rosa coral': '#FF6F7D',
+      coral: '#FF6B5B',
+      'coral neon': '#FF4D4D',
+      'coral fluo': '#FF4757',
+      salmon: '#FA8072',
+      naranja: '#F97316',
+      mango: '#FFB319',
+      amarillo: '#FACC15',
+      'amarillo pastel': '#FEF08A',
+      mostaza: '#D97706',
+      champagne: '#EFE1C6',
+      lima: '#A3E635',
+      'verde lima': '#84CC16',
+      pistacho: '#93C572',
+      'verde pistacho': '#93C572',
+      'verde menta': '#6EE7B7',
+      aqua: '#2DD4BF',
+      turquesa: '#06B6D4',
+      celeste: '#7DD3FC',
+      azul: '#2563EB',
+      'azul francia': '#1D4ED8',
+      'azul marino': '#1E3A8A',
+      'azul nautico': '#1E3A8A',
+      petroleo: '#0F4C5C',
+      'verde petroleo': '#0E5A5A',
+      'verde ocean': '#117A65',
+      'verde esmeralda': '#059669',
+      verde: '#16A34A',
+      'verde oliva': '#6B8E23',
+      oliva: '#6B8E23',
+      'verde aceituna': '#556B2F',
+      'verde militar': '#4B5320',
+      militar: '#4B5320',
+      lila: '#C084FC',
+      lavanda: '#D8B4FE'
+    };
+
+    function getSwatchStyle(colorName) {
+      const lower = colorName.toLowerCase().trim();
+
+      if (lower.includes('animal print')) {
+        return 'background: radial-gradient(circle at 30% 35%, #3B2314 18%, transparent 20%), radial-gradient(circle at 70% 65%, #3B2314 20%, transparent 22%), #D49B54;';
+      }
+      if (lower.includes('cuadrille')) {
+        let base = '#E62E6B';
+        if (lower.includes('amarillo')) base = '#FACC15';
+        else if (lower.includes('chocolate')) base = '#5C3A21';
+        else if (lower.includes('celeste')) base = '#7DD3FC';
+        else if (lower.includes('verde')) base = '#16A34A';
+        else if (lower.includes('negro')) base = '#1C1917';
+        else if (lower.includes('rojo')) base = '#DC2626';
+        else if (lower.includes('bordo')) base = '#6E1423';
+        return `background: repeating-linear-gradient(45deg, ${base}, ${base} 3px, #FFFFFF 3px, #FFFFFF 6px);`;
+      }
+      if (lower.includes('lunares')) {
+        let base = '#1C1917';
+        let dot = '#FFFFFF';
+        if (lower.includes('chocolate')) base = '#4E2E20';
+        else if (lower.includes('blanco')) { base = '#FFFFFF'; dot = '#1C1917'; }
+        else if (lower.includes('celeste')) base = '#7DD3FC';
+        else if (lower.includes('rosa')) base = '#F48FB1';
+        return `background: radial-gradient(circle, ${dot} 28%, ${base} 32%);`;
+      }
+      if (lower.includes('estampa')) {
+        if (lower.includes('azul')) return 'background: linear-gradient(135deg, #1D4ED8, #7DD3FC, #FFFFFF);';
+        if (lower.includes('flores')) return 'background: linear-gradient(135deg, #E62E6B, #FACC15, #6B8E23);';
+        if (lower.includes('coral')) return 'background: linear-gradient(135deg, #FF6B5B, #FADADD);';
+      }
+
+      const parts = lower.split(/\s+y\s+|\s+tira\s+/);
+      if (parts.length >= 2) {
+        const c1 = findSingleColor(parts[0]);
+        const c2 = findSingleColor(parts[1]);
+        return `background: linear-gradient(135deg, ${c1} 50%, ${c2} 50%);`;
+      }
+
+      return `background-color: ${findSingleColor(lower)};`;
+    }
+
+    function findSingleColor(str) {
+      const clean = str.replace(/texturada|textura|liso|bicolor/g, '').trim();
+      if (COLOR_SWATCH_MAP[clean]) return COLOR_SWATCH_MAP[clean];
+      for (const [key, hex] of Object.entries(COLOR_SWATCH_MAP)) {
+        if (clean.includes(key)) return hex;
+      }
+      return '#F48FB1';
+    }
+
+    /**
+     * =========================================================================
+     * 3. ESTADO, CARGADOR LOCAL DE ZIP/CARPETA Y UTILIDADES
+     * =========================================================================
+     */
+    const state = {
+      search: '',
+      stockFilter: 'all',
+      sizeFilter: 'ALL',
+      catFilter: 'ALL',
+      cardSelections: {},
+      cart: JSON.parse(localStorage.getItem('koko_cart_v1') || '[]'),
+      waPhone: localStorage.getItem('koko_wa_phone_v1') || '',
+      // Mapa de URLs Blob creadas si el usuario carga su ZIP o carpeta local en el navegador
+      blobImageMap: {}
+    };
+
+    function resolveImageSrc(catalogPath) {
+      if (!catalogPath) return '';
+      if (state.blobImageMap[catalogPath]) return state.blobImageMap[catalogPath];
+      // También buscar por sufijo <CARPETA>/<ARCHIVO> si el ZIP tiene prefijo extra
+      const normalized = catalogPath.replace(/^CATALOGO\//i, '');
+      for (const [key, blobUrl] of Object.entries(state.blobImageMap)) {
+        if (key.endsWith('/' + normalized) || key.endsWith(catalogPath)) {
+          return blobUrl;
+        }
+      }
+      return catalogPath;
+    }
+
+    function registerBlobImage(entryPath, blob) {
+      const clean = entryPath.replace(/^\.?\//, '').replace(/\\/g, '/');
+      const url = URL.createObjectURL(blob);
+      state.blobImageMap[clean] = url;
+      const idx = clean.toUpperCase().indexOf('CATALOGO/');
+      if (idx !== -1) {
+        state.blobImageMap[clean.slice(idx)] = url;
+      }
+    }
+
+    CATALOG_DATA.forEach(model => {
+      if (!model.outOfStock && model.variants.length > 0) {
+        const firstSizes = Object.keys(model.variants[0].sizes);
+        const defaultSize = firstSizes[0] || '';
+        const defaultColors = defaultSize ? model.variants[0].sizes[defaultSize] : [];
+        state.cardSelections[model.id] = {
+          variantIdx: 0,
+          size: defaultSize,
+          color: defaultColors[0] || '',
+          imgIdx: 0
+        };
+      } else {
+        state.cardSelections[model.id] = {
+          variantIdx: 0,
+          size: '',
+          color: '',
+          imgIdx: 0
+        };
+      }
+    });
+
+    function saveCart() {
+      localStorage.setItem('koko_cart_v1', JSON.stringify(state.cart));
+      updateCartUI();
+    }
+
+    function showToast(message, type = 'pink') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const bgClass = type === 'green' ? 'bg-[#25D366] text-white' : 'bg-koko-pink text-white';
+      toast.className = `${bgClass} px-4 py-2.5 rounded-2xl shadow-lg font-medium text-xs sm:text-sm flex items-center gap-2 transform transition-all duration-300 translate-y-0 opacity-100 pointer-events-auto border border-white/40`;
+      toast.innerHTML = `<span>✿</span><span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    /**
+     * =========================================================================
+     * 4. FILTRADO Y RENDERIZADO DEL CATÁLOGO
+     * =========================================================================
+     */
+    function updateCounters() {
+      const total = CATALOG_DATA.length;
+      const out = CATALOG_DATA.filter(m => m.outOfStock).length;
+      const avail = total - out;
+      document.getElementById('count-all').textContent = total;
+      document.getElementById('count-available').textContent = avail;
+      document.getElementById('count-out').textContent = out;
+    }
+
+    function getFilteredModels() {
+      const q = state.search.toLowerCase().trim();
+
+      return CATALOG_DATA.filter(model => {
+        if (state.stockFilter === 'available' && model.outOfStock) return false;
+        if (state.stockFilter === 'out' && !model.outOfStock) return false;
+
+        if (state.catFilter !== 'ALL' && !model.categories.includes(state.catFilter)) {
+          return false;
+        }
+
+        if (state.sizeFilter !== 'ALL') {
+          if (model.outOfStock) return false;
+          const hasSize = model.variants.some(v => Object.keys(v.sizes).includes(state.sizeFilter));
+          if (!hasSize) return false;
+        }
+
+        if (q) {
+          const inName = model.name.toLowerCase().includes(q);
+          const inTags = model.tags.some(t => t.toLowerCase().includes(q));
+          const inColors = model.variants.some(v =>
+            Object.values(v.sizes).some(colorList =>
+              colorList.some(c => c.toLowerCase().includes(q))
+            )
+          );
+          if (!inName && !inTags && !inColors) return false;
+        }
+
+        return true;
+      });
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById('catalog-grid');
+      const emptyState = document.getElementById('empty-state');
+      const summary = document.getElementById('results-summary');
+      const resetBtn = document.getElementById('reset-filters-btn');
+
+      const filtered = getFilteredModels();
+
+      summary.innerHTML = `Mostrando <span class="font-bold text-koko-pink">${filtered.length}</span> de ${CATALOG_DATA.length} modelos`;
+
+      const hasActiveFilters =
+        state.search !== '' ||
+        state.stockFilter !== 'all' ||
+        state.sizeFilter !== 'ALL' ||
+        state.catFilter !== 'ALL';
+      resetBtn.classList.toggle('hidden', !hasActiveFilters);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(model => buildModelCardHTML(model)).join('');
+    }
+
+    function buildModelCardHTML(model) {
+      const sel = state.cardSelections[model.id];
+      const hasImages = model.images && model.images.length > 0;
+      const rawImgSrc = hasImages ? model.images[sel.imgIdx % model.images.length] : '';
+      const currentImgSrc = resolveImageSrc(rawImgSrc);
+
+      if (!model.outOfStock && state.sizeFilter !== 'ALL') {
+        const activeVar = model.variants[sel.variantIdx];
+        if (activeVar && activeVar.sizes[state.sizeFilter] && sel.size !== state.sizeFilter) {
+          sel.size = state.sizeFilter;
+          sel.color = activeVar.sizes[state.sizeFilter][0] || '';
+        }
+      }
+
+      const imageSectionHTML = hasImages
+        ? `
+          <div class="relative aspect-[3/4] w-full bg-koko-pastelLight overflow-hidden group">
+            <img
+              src="${currentImgSrc}"
+              alt="Bikini ${model.name}"
+              loading="lazy"
+              onclick="openLightbox('${model.id}', ${sel.imgIdx})"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x800/FADADD/E62E6B?text=KOKO+${encodeURIComponent(model.name)}';"
+              class="w-full h-full object-cover cursor-zoom-in transition-transform duration-500 group-hover:scale-105 ${model.outOfStock ? 'grayscale opacity-75' : ''}"
+            />
+
+            <button
+              type="button"
+              onclick="openLightbox('${model.id}', ${sel.imgIdx})"
+              class="absolute top-3 right-3 p-2 rounded-full bg-white/85 hover:bg-koko-pink text-koko-pink hover:text-white shadow-sm transition opacity-90 sm:opacity-0 sm:group-hover:opacity-100"
+              title="Ver foto en grande"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M21 21l-4.35-4.35M11 8v6M8 11h6" stroke-linecap="round"/>
+              </svg>
+            </button>
+
+            ${model.images.length > 1 ? `
+              <button
+                type="button"
+                onclick="changeCardImage('${model.id}', -1)"
+                class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/85 hover:bg-koko-pink text-koko-pink hover:text-white flex items-center justify-center shadow transition"
+                title="Foto anterior"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                onclick="changeCardImage('${model.id}', 1)"
+                class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/85 hover:bg-koko-pink text-koko-pink hover:text-white flex items-center justify-center shadow transition"
+                title="Foto siguiente"
+              >
+                ›
+              </button>
+              <div class="absolute bottom-2.5 inset-x-0 flex justify-center gap-1.5 px-2">
+                ${model.images.map((_, idx) => `
+                  <button
+                    type="button"
+                    onclick="setCardImage('${model.id}', ${idx})"
+                    class="h-1.5 rounded-full transition-all ${idx === sel.imgIdx ? 'w-5 bg-koko-pink' : 'w-1.5 bg-white/80 hover:bg-white'}"
+                  ></button>
+                `).join('')}
+              </div>
+            ` : ''}
+
+            ${model.outOfStock ? `
+              <div class="absolute inset-0 bg-black/25 flex items-center justify-center pointer-events-none">
+                <span class="bg-gray-900/90 text-white font-groovy font-bold tracking-widest text-sm px-4 py-1.5 rounded-full border-2 border-white shadow-lg uppercase">
+                  Sin Stock
+                </span>
+              </div>
+            ` : ''}
+          </div>
+        `
+        : `
+          <div class="relative aspect-[3/4] w-full bg-gradient-to-br from-koko-pastel via-koko-pastelLight to-koko-cream flex flex-col items-center justify-center p-6 text-center border-b border-koko-pastel">
+            <svg class="w-16 h-16 text-koko-pink/80 mb-2" viewBox="0 0 120 120" fill="none">
+              <path d="M60 58C45 45 35 20 55 12C70 6 78 24 65 55Z" fill="currentColor"/>
+              <path d="M63 59C78 44 103 38 108 58C112 73 94 79 65 64Z" fill="currentColor"/>
+              <path d="M62 63C80 74 90 98 73 108C59 116 49 100 58 66Z" fill="currentColor"/>
+              <path d="M57 63C44 80 20 92 12 74C5 60 22 49 55 59Z" fill="currentColor"/>
+              <path d="M56 58C36 53 16 33 29 18C40 6 56 19 59 55Z" fill="currentColor"/>
+              <circle cx="60" cy="60" r="10" fill="#FFF8F5"/>
+            </svg>
+            <span class="font-groovy font-bold text-2xl text-koko-pink">${model.name}</span>
+            <span class="text-xs font-medium text-koko-pink/80 mt-1">KOKO BIKINIS • Colección</span>
+            ${model.outOfStock ? `
+              <span class="mt-3 bg-gray-900/90 text-white font-groovy font-bold tracking-widest text-xs px-3.5 py-1 rounded-full uppercase">
+                Sin Stock
+              </span>
+            ` : `
+              <span class="mt-3 bg-white/90 text-koko-pink text-[11px] font-semibold px-3 py-1 rounded-full border border-koko-pastel">
+                Consultá foto real por WhatsApp ♡
+              </span>
+            `}
+          </div>
+        `;
+
+      if (model.outOfStock) {
+        return `
+          <article class="bg-white rounded-3xl overflow-hidden shadow-card border-2 border-koko-pastel/80 flex flex-col justify-between opacity-90">
+            <div>
+              ${imageSectionHTML}
+              <div class="p-4">
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="font-groovy font-bold text-xl text-gray-700">${model.name}</h3>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-gray-200 text-gray-700 uppercase">
+                    Sin Stock
+                  </span>
+                </div>
+                <p class="text-xs text-gray-500">Temporalmente agotada. Consultanos por próximos ingresos.</p>
+              </div>
+            </div>
+            <div class="px-4 pb-4">
+              <button
+                type="button"
+                disabled
+                class="w-full py-2.5 rounded-2xl bg-gray-100 text-gray-400 font-groovy font-semibold text-xs cursor-not-allowed"
+              >
+                No disponible por el momento
+              </button>
+            </div>
+          </article>
+        `;
+      }
+
+      const activeVariant = model.variants[sel.variantIdx] || model.variants[0];
+      const availableSizes = Object.keys(activeVariant.sizes);
+      const currentSize = availableSizes.includes(sel.size) ? sel.size : availableSizes[0];
+      const colorsForSize = activeVariant.sizes[currentSize] || [];
+      const currentColor = colorsForSize.includes(sel.color) ? sel.color : (colorsForSize[0] || '');
+
+      return `
+        <article class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-xl border-2 border-koko-pastel hover:border-koko-pink/60 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            ${imageSectionHTML}
+
+            <div class="p-4 space-y-3">
+              <div>
+                <div class="flex items-center justify-between gap-2">
+                  <h3 class="font-groovy font-bold text-xl text-koko-pink tracking-wide">${model.name}</h3>
+                  <span class="text-[11px] font-bold text-koko-olive bg-koko-olive/10 px-2.5 py-0.5 rounded-full">
+                    En stock
+                  </span>
+                </div>
+
+                ${model.tags.length > 0 ? `
+                  <div class="flex flex-wrap gap-1 mt-1.5">
+                    ${model.tags.map(tag => `
+                      <span class="px-2 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-koko-pastelLight text-koko-pink border border-koko-pastel">
+                        ${tag}
+                      </span>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+
+              ${model.variants.length > 1 ? `
+                <div class="bg-koko-cream p-1.5 rounded-2xl border border-koko-pastel space-y-1">
+                  <span class="block text-[10px] font-bold uppercase tracking-wider text-gray-500 px-1">Elegí versión:</span>
+                  <div class="flex flex-col gap-1">
+                    ${model.variants.map((v, vIdx) => `
+                      <button
+                        type="button"
+                        onclick="selectCardVariant('${model.id}', ${vIdx})"
+                        class="text-left px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition ${vIdx === sel.variantIdx ? 'bg-koko-pink text-white shadow-xs' : 'bg-white text-gray-700 hover:bg-koko-pastelLight'}"
+                      >
+                        ${v.label}
+                      </button>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-gray-500">1. Elegí tu Talle:</span>
+                  <span class="text-[11px] font-semibold text-koko-pink">${availableSizes.length} talles</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  ${availableSizes.map(sz => `
+                    <button
+                      type="button"
+                      onclick="selectCardSize('${model.id}', '${sz}')"
+                      class="min-w-[2.25rem] px-2.5 py-1.5 rounded-xl text-xs font-groovy font-bold transition ${sz === currentSize ? 'bg-koko-pink text-white shadow-sm scale-105' : 'bg-koko-cream text-gray-700 border border-koko-pastel hover:border-koko-pink'}"
+                    >
+                      ${sz}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-gray-500">2. Colores en ${currentSize}:</span>
+                  <span class="text-[11px] text-gray-400">${colorsForSize.length} disp.</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pr-0.5">
+                  ${colorsForSize.map(color => {
+                    const isSelected = color === currentColor;
+                    const escapedColor = color.replace(/'/g, "\\'");
+                    return `
+                      <button
+                        type="button"
+                        onclick="selectCardColor('${model.id}', '${escapedColor}')"
+                        class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border transition ${isSelected ? 'bg-koko-pastelLight border-koko-pink text-koko-pink font-bold shadow-2xs' : 'bg-white border-gray-200 text-gray-700 hover:border-koko-pink/60'}"
+                      >
+                        <span class="w-3 h-3 rounded-full border border-black/20 shrink-0" style="${getSwatchStyle(color)}"></span>
+                        <span class="leading-tight text-left">${color}</span>
+                      </button>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-4 pb-4 pt-1">
+            <button
+              type="button"
+              onclick="addToCart('${model.id}')"
+              class="w-full py-2.5 px-4 rounded-2xl bg-koko-pink hover:bg-koko-pinkDark text-white font-groovy font-semibold text-sm shadow-sm hover:shadow transition active:scale-[0.98] flex items-center justify-center gap-1.5"
+            >
+              <span>+ Agregar a mi lista</span>
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    /**
+     * =========================================================================
+     * 5. INTERACCIONES DE TARJETA, CARRITO Y LIGHTBOX
+     * =========================================================================
+     */
+    window.changeCardImage = function (modelId, delta) {
+      const model = CATALOG_DATA.find(m => m.id === modelId);
+      if (!model || model.images.length <= 1) return;
+      const sel = state.cardSelections[modelId];
+      sel.imgIdx = (sel.imgIdx + delta + model.images.length) % model.images.length;
+      renderCatalog();
+    };
+
+    window.setCardImage = function (modelId, idx) {
+      state.cardSelections[modelId].imgIdx = idx;
+      renderCatalog();
+    };
+
+    window.selectCardVariant = function (modelId, variantIdx) {
+      const model = CATALOG_DATA.find(m => m.id === modelId);
+      const variant = model.variants[variantIdx];
+      const sizes = Object.keys(variant.sizes);
+      const nextSize = sizes.includes(state.cardSelections[modelId].size)
+        ? state.cardSelections[modelId].size
+        : sizes[0];
+      const colors = variant.sizes[nextSize] || [];
+      state.cardSelections[modelId] = {
+        ...state.cardSelections[modelId],
+        variantIdx,
+        size: nextSize,
+        color: colors[0] || ''
+      };
+      renderCatalog();
+    };
+
+    window.selectCardSize = function (modelId, size) {
+      const model = CATALOG_DATA.find(m => m.id === modelId);
+      const sel = state.cardSelections[modelId];
+      const variant = model.variants[sel.variantIdx];
+      const colors = variant.sizes[size] || [];
+      sel.size = size;
+      if (!colors.includes(sel.color)) {
+        sel.color = colors[0] || '';
+      }
+      renderCatalog();
+    };
+
+    window.selectCardColor = function (modelId, color) {
+      state.cardSelections[modelId].color = color;
+      renderCatalog();
+    };
+
+    window.addToCart = function (modelId) {
+      const model = CATALOG_DATA.find(m => m.id === modelId);
+      if (!model || model.outOfStock) return;
+
+      const sel = state.cardSelections[modelId];
+      const variant = model.variants[sel.variantIdx];
+      const variantLabel = model.variants.length > 1 ? variant.label : '';
+      const size = sel.size || Object.keys(variant.sizes)[0];
+      const color = sel.color || variant.sizes[size][0];
+      const thumb = resolveImageSrc(model.images[0] || '');
+
+      const existingIdx = state.cart.findIndex(
+        item =>
+          item.modelId === modelId &&
+          item.variantLabel === variantLabel &&
+          item.size === size &&
+          item.color === color
+      );
+
+      if (existingIdx > -1) {
+        state.cart[existingIdx].qty += 1;
+      } else {
+        state.cart.push({
+          modelId,
+          name: model.name,
+          variantLabel,
+          size,
+          color,
+          thumb,
+          qty: 1
+        });
+      }
+
+      saveCart();
+      showToast(`¡${model.name} (${size} - ${color}) agregada a tu lista!`);
+    };
+
+    window.updateCartQty = function (idx, delta) {
+      if (!state.cart[idx]) return;
+      state.cart[idx].qty += delta;
+      if (state.cart[idx].qty <= 0) {
+        state.cart.splice(idx, 1);
+      }
+      saveCart();
+    };
+
+    window.removeCartItem = function (idx) {
+      state.cart.splice(idx, 1);
+      saveCart();
+    };
+
+    function updateCartUI() {
+      const totalItems = state.cart.reduce((acc, item) => acc + item.qty, 0);
+      document.getElementById('cart-badge').textContent = totalItems;
+      document.getElementById('cart-total-count').textContent = totalItems;
+
+      const container = document.getElementById('cart-items-container');
+      if (state.cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 px-4">
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-koko-pastelLight flex items-center justify-center text-koko-pink text-2xl">
+              ✿
+            </div>
+            <h3 class="font-groovy font-bold text-lg text-koko-pink">Tu lista está vacía</h3>
+            <p class="text-xs text-gray-500 mt-1">
+              Tocá <strong>"+ Agregar a mi lista"</strong> en tus bikinis favoritas para armar tu consulta rápida.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = state.cart.map((item, idx) => `
+        <div class="bg-white p-3 rounded-2xl border border-koko-pastel shadow-2xs flex items-center gap-3">
+          <div class="w-14 h-16 rounded-xl overflow-hidden bg-koko-pastelLight shrink-0 flex items-center justify-center">
+            ${item.thumb
+              ? `<img src="${item.thumb}" alt="${item.name}" class="w-full h-full object-cover" onerror="this.style.display='none'" />`
+              : `<span class="font-groovy font-bold text-xs text-koko-pink">KOKO</span>`
+            }
+          </div>
+          <div class="flex-1 min-w-0">
+            <h4 class="font-groovy font-bold text-sm text-koko-pink truncate">${item.name}</h4>
+            ${item.variantLabel ? `<p class="text-[10px] font-bold text-gray-400 uppercase">${item.variantLabel}</p>` : ''}
+            <div class="flex flex-wrap items-center gap-1.5 mt-1">
+              <span class="px-2 py-0.5 rounded-md bg-koko-pastelLight text-koko-pink font-bold text-[11px]">${item.size}</span>
+              <span class="inline-flex items-center gap-1 text-xs text-gray-700 font-medium">
+                <span class="w-2.5 h-2.5 rounded-full border border-black/20" style="${getSwatchStyle(item.color)}"></span>
+                ${item.color}
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col items-end gap-1.5">
+            <button onclick="removeCartItem(${idx})" class="text-gray-300 hover:text-red-500 text-xs" title="Eliminar">✕</button>
+            <div class="flex items-center gap-1.5 bg-koko-cream rounded-xl px-1.5 py-0.5 border border-koko-pastel">
+              <button onclick="updateCartQty(${idx}, -1)" class="w-5 h-5 font-bold text-koko-pink hover:bg-white rounded-lg">−</button>
+              <span class="text-xs font-bold w-4 text-center">${item.qty}</span>
+              <button onclick="updateCartQty(${idx}, 1)" class="w-5 h-5 font-bold text-koko-pink hover:bg-white rounded-lg">+</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function buildWhatsAppMessage() {
+      const lines = [
+        '¡Hola KOKO BIKINIS! 🌺✨',
+        'Quiero consultar disponibilidad y precios de los siguientes modelos del catálogo:',
+        ''
+      ];
+
+      state.cart.forEach((item, index) => {
+        const varText = item.variantLabel ? ` [${item.variantLabel}]` : '';
+        lines.push(`${index + 1}. *${item.name}*${varText} — Talle: *${item.size}* | Color: *${item.color}* (x${item.qty})`);
+      });
+
+      lines.push('');
+      lines.push('¡Muchas gracias! Sol, playa y KOKO ♡');
+      return lines.join('\n');
+    }
+
+    const lightboxState = {
+      modelId: null,
+      imgIdx: 0
+    };
+
+    window.openLightbox = function (modelId, imgIdx = 0) {
+      const model = CATALOG_DATA.find(m => m.id === modelId);
+      if (!model || !model.images || model.images.length === 0) return;
+
+      lightboxState.modelId = modelId;
+      lightboxState.imgIdx = imgIdx;
+      updateLightboxUI();
+
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightboxUI() {
+      const model = CATALOG_DATA.find(m => m.id === lightboxState.modelId);
+      if (!model) return;
+
+      const total = model.images.length;
+      const idx = (lightboxState.imgIdx + total) % total;
+      lightboxState.imgIdx = idx;
+
+      const resolvedSrc = resolveImageSrc(model.images[idx]);
+      document.getElementById('lightbox-title').textContent = model.name;
+      document.getElementById('lightbox-counter').textContent = `Foto ${idx + 1} de ${total}`;
+      const lbImg = document.getElementById('lightbox-img');
+      lbImg.onerror = function () {
+        this.onerror = null;
+        this.src = `https://placehold.co/600x800/FADADD/E62E6B?text=KOKO+${encodeURIComponent(model.name)}`;
+      };
+      lbImg.src = resolvedSrc;
+
+      document.getElementById('lightbox-prev').classList.toggle('hidden', total <= 1);
+      document.getElementById('lightbox-next').classList.toggle('hidden', total <= 1);
+
+      const thumbs = document.getElementById('lightbox-thumbs');
+      thumbs.innerHTML = total > 1
+        ? model.images.map((src, i) => `
+            <button
+              type="button"
+              onclick="lightboxState.imgIdx = ${i}; updateLightboxUI();"
+              class="w-12 h-14 rounded-xl overflow-hidden border-2 shrink-0 transition ${i === idx ? 'border-koko-pink scale-105' : 'border-transparent opacity-60 hover:opacity-100'}"
+            >
+              <img src="${resolveImageSrc(src)}" class="w-full h-full object-cover" />
+            </button>
+          `).join('')
+        : '';
+    }
+
+    /**
+     * =========================================================================
+     * 6. CARGADOR DE ARCHIVO ZIP O CARPETA LOCAL EN EL NAVEGADOR
+     * =========================================================================
+     */
+    async function handleZipFileUpload(file) {
+      if (!file || typeof JSZip === 'undefined') {
+        showToast('No se pudo leer el archivo ZIP');
+        return;
+      }
+      try {
+        showToast('Cargando fotos desde el ZIP...');
+        const zip = await JSZip.loadAsync(file);
+        let loadedCount = 0;
+        const entries = [];
+        zip.forEach((relativePath, entry) => {
+          if (!entry.dir && /\.(jpe?g|png|webp|gif)$/i.test(relativePath)) {
+            entries.push({ relativePath, entry });
+          }
+        });
+        for (const item of entries) {
+          const blob = await item.entry.async('blob');
+          registerBlobImage(item.relativePath, blob);
+          loadedCount += 1;
+        }
+        document.getElementById('media-source-status').innerHTML =
+          `<span class="text-koko-olive font-bold">✓ ${loadedCount} fotos cargadas desde ZIP</span>`;
+        renderCatalog();
+        showToast(`¡${loadedCount} fotos activadas en el catálogo!`, 'green');
+      } catch (err) {
+        showToast('Error al descomprimir el ZIP');
+      }
+    }
+
+    function handleFolderFileUpload(fileList) {
+      if (!fileList || fileList.length === 0) return;
+      let loadedCount = 0;
+      Array.from(fileList).forEach(file => {
+        if (/\.(jpe?g|png|webp|gif)$/i.test(file.name)) {
+          const relPath = file.webkitRelativePath || file.name;
+          registerBlobImage(relPath, file);
+          loadedCount += 1;
+        }
+      });
+      document.getElementById('media-source-status').innerHTML =
+        `<span class="text-koko-olive font-bold">✓ ${loadedCount} fotos cargadas desde carpeta</span>`;
+      renderCatalog();
+      showToast(`¡${loadedCount} fotos cargadas!`, 'green');
+    }
+
+    /**
+     * =========================================================================
+     * 7. EVENT LISTENERS GLOBALES E INICIALIZACIÓN
+     * =========================================================================
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCounters();
+      renderCatalog();
+      updateCartUI();
+
+      document.getElementById('zip-file-input').addEventListener('change', e => {
+        if (e.target.files && e.target.files[0]) {
+          handleZipFileUpload(e.target.files[0]);
+        }
+      });
+
+      document.getElementById('folder-file-input').addEventListener('change', e => {
+        if (e.target.files && e.target.files.length > 0) {
+          handleFolderFileUpload(e.target.files);
+        }
+      });
+
+      const searchInput = document.getElementById('search-input');
+      const clearSearchBtn = document.getElementById('clear-search-btn');
+
+      searchInput.addEventListener('input', e => {
+        state.search = e.target.value;
+        clearSearchBtn.classList.toggle('hidden', !state.search);
+        renderCatalog();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        state.search = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        renderCatalog();
+      });
+
+      document.querySelectorAll('.stock-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.stockFilter = btn.dataset.stock;
+          document.querySelectorAll('.stock-filter-btn').forEach(b => {
+            b.className = 'stock-filter-btn px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition bg-white text-koko-pink border border-koko-pastel hover:bg-koko-pastelLight';
+          });
+          btn.className = 'stock-filter-btn active px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition bg-koko-pink text-white shadow-sm';
+          renderCatalog();
+        });
+      });
+
+      document.querySelectorAll('.size-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.sizeFilter = btn.dataset.size;
+          document.querySelectorAll('.size-filter-btn').forEach(b => {
+            b.className = 'size-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white text-gray-700 border border-koko-pastel hover:border-koko-pink transition shrink-0';
+          });
+          btn.className = 'size-filter-btn active px-3 py-1.5 rounded-xl text-xs font-bold bg-koko-pink text-white transition shrink-0';
+          renderCatalog();
+        });
+      });
+
+      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.catFilter = btn.dataset.cat;
+          document.querySelectorAll('.cat-filter-btn').forEach(b => {
+            b.className = 'cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white text-gray-700 border border-koko-pastel hover:border-koko-olive transition shrink-0';
+          });
+          btn.className = 'cat-filter-btn active px-3 py-1.5 rounded-xl text-xs font-semibold bg-koko-olive text-white transition shrink-0';
+          renderCatalog();
+        });
+      });
+
+      function resetAllFilters() {
+        state.search = '';
+        state.stockFilter = 'all';
+        state.sizeFilter = 'ALL';
+        state.catFilter = 'ALL';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        document.querySelector('.stock-filter-btn[data-stock="all"]').click();
+        document.querySelector('.size-filter-btn[data-size="ALL"]').click();
+        document.querySelector('.cat-filter-btn[data-cat="ALL"]').click();
+      }
+      document.getElementById('reset-filters-btn').addEventListener('click', resetAllFilters);
+      document.getElementById('empty-reset-btn').addEventListener('click', resetAllFilters);
+
+      const drawer = document.getElementById('cart-drawer');
+      const backdrop = document.getElementById('cart-drawer-backdrop');
+
+      function openDrawer() {
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+      }
+      function closeDrawer() {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+
+      document.getElementById('floating-cart-btn').addEventListener('click', openDrawer);
+      document.getElementById('close-cart-btn').addEventListener('click', closeDrawer);
+      backdrop.addEventListener('click', closeDrawer);
+
+      const waPhoneInput = document.getElementById('wa-phone-input');
+      waPhoneInput.value = state.waPhone;
+      waPhoneInput.addEventListener('input', e => {
+        state.waPhone = e.target.value.replace(/\D/g, '');
+        localStorage.setItem('koko_wa_phone_v1', state.waPhone);
+      });
+
+      document.getElementById('send-whatsapp-btn').addEventListener('click', () => {
+        if (state.cart.length === 0) {
+          showToast('Agregá al menos una bikini a tu lista primero ♡');
+          return;
+        }
+        const text = encodeURIComponent(buildWhatsAppMessage());
+        const phone = state.waPhone.trim();
+        const url = phone ? `https://wa.me/${phone}?text=${text}` : `https://wa.me/?text=${text}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+
+      document.getElementById('copy-list-btn').addEventListener('click', () => {
+        if (state.cart.length === 0) {
+          showToast('Tu lista está vacía ♡');
+          return;
+        }
+        const msg = buildWhatsAppMessage();
+        const textarea = document.createElement('textarea');
+        textarea.value = msg;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+          document.execCommand('copy');
+          showToast('¡Lista copiada! Lista para pegar en WhatsApp o IG', 'green');
+        } catch (err) {
+          showToast('No se pudo copiar automáticamente');
+        }
+        document.body.removeChild(textarea);
+      });
+
+      document.getElementById('clear-cart-btn').addEventListener('click', () => {
+        state.cart = [];
+        saveCart();
+        showToast('Lista vaciada');
+      });
+
+      document.getElementById('close-lightbox-btn').addEventListener('click', closeLightbox);
+      document.getElementById('lightbox-prev').addEventListener('click', () => {
+        lightboxState.imgIdx -= 1;
+        updateLightboxUI();
+      });
+      document.getElementById('lightbox-next').addEventListener('click', () => {
+        lightboxState.imgIdx += 1;
+        updateLightboxUI();
+      });
+      document.getElementById('lightbox-modal').addEventListener('click', e => {
+        if (e.target.id === 'lightbox-modal') closeLightbox();
+      });
+      document.addEventListener('keydown', e => {
+        if (document.getElementById('lightbox-modal').classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') {
+          lightboxState.imgIdx -= 1;
+          updateLightboxUI();
+        }
+        if (e.key === 'ArrowRight') {
+          lightboxState.imgIdx += 1;
+          updateLightboxUI();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
